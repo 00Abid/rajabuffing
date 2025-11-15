@@ -14,6 +14,30 @@ export default function Contact() {
     return (
         <div className="pt-24 pb-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                {/* Breadcrumb Schema */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "BreadcrumbList",
+                            "itemListElement": [
+                                {
+                                    "@type": "ListItem",
+                                    "position": 1,
+                                    "name": "Home",
+                                    "item": "https://rajabuffing.vercel.app"
+                                },
+                                {
+                                    "@type": "ListItem",
+                                    "position": 2,
+                                    "name": "Contact",
+                                    "item": "https://rajabuffing.vercel.app/Contact"
+                                }
+                            ]
+                        })
+                    }}
+                />
                 <h1 className="text-3xl font-bold text-center mb-12 text-black">
                     Contact Us
                 </h1>
@@ -51,7 +75,7 @@ export default function Contact() {
 
                                 <p className="flex items-center text-gray-600">
                                     <Mail className="mr-2 text-gray-500" size={18} />
-                                    rajabuffingworks@gmail.com
+                                    rajabuffingworks00@gmail.com
                                 </p>
 
                                 <p className="flex items-center text-gray-600">

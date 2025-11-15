@@ -1,7 +1,8 @@
 
 export const metadata = {
     title: "Customer Testimonials - RAJA BUFFING WORKS | Client Reviews & Success Stories",
-    description: "Read testimonials from satisfied customers who trust RAJA BUFFING WORKS for their utensil buffing and polishing needs.",
+    description: "Read testimonials from satisfied customers who trust RAJA BUFFING WORKS for their utensil buffing and polishing needs. Rated 4.8/5 stars by 150+ customers.",
+    keywords: "RAJA BUFFING WORKS reviews, customer testimonials, utensil buffing ratings, polishing service reviews, Vasai East reviews",
     alternates: {
         canonical: 'https://rajabuffing.vercel.app/testimonials',
     },
@@ -42,6 +43,39 @@ export default function Testimonials() {
     return (
         <div className="pt-24 pb-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                {/* Review Schema JSON-LD */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "LocalBusiness",
+                            "name": "RAJA BUFFING WORKS",
+                            "aggregateRating": {
+                                "@type": "AggregateRating",
+                                "ratingValue": "4.8",
+                                "reviewCount": "150",
+                                "bestRating": "5",
+                                "worstRating": "1"
+                            },
+                            "review": testimonials.map(t => ({
+                                "@type": "Review",
+                                "author": {
+                                    "@type": "Person",
+                                    "name": t.name
+                                },
+                                "datePublished": t.date,
+                                "reviewBody": t.testimonial,
+                                "reviewRating": {
+                                    "@type": "Rating",
+                                    "ratingValue": t.rating,
+                                    "bestRating": "5",
+                                    "worstRating": "1"
+                                }
+                            }))
+                        })
+                    }}
+                />
                 <h1 className="text-3xl font-bold text-center mb-12 text-black">
                     Customer Testimonials
                 </h1>

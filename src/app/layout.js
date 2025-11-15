@@ -22,13 +22,23 @@ export const metadata = {
     title: "RAJA BUFFING WORKS - Premium Utensil Buffing Services",
     description: "Bringing the shine back with precision buffing for perfect utensils. Serving Vasai East and surrounding areas.",
     url: "https://rajabuffing.vercel.app",
+    siteName: "RAJA BUFFING WORKS",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "https://rajabuffing.vercel.app/og.webp",
+        width: 1200,
+        height: 630,
+        alt: "RAJA BUFFING WORKS - Professional Utensil Buffing Services",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "RAJA BUFFING WORKS - Utensil Buffing Experts",
     description: "Professional buffing and polishing services for all your kitchen utensils.",
+    images: ["https://rajabuffing.vercel.app/og.webp"],
   },
   robots: {
     index: true,
@@ -172,9 +182,7 @@ export default function RootLayout({ children }) {
                 "@type": "ContactPoint",
                 "telephone": "+91-9096769473",
                 "contactType": "customer service",
-                "availableLanguage": "English",
-                "availableLanguage": "Hindi",
-                "availableLanguage": "Marathi"
+                "availableLanguage": ["English", "Hindi", "Marathi"]
               },
               "sameAs": [
                 "https://www.facebook.com/rajabuffingworks",
