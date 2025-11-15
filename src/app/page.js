@@ -67,7 +67,7 @@ export default function Home() {
               </p>
               <p className="text-gray-700">
                 Powered by a vast array of state-of-the-art machines, we offer
-                precision and perfection with every buff and press — truly
+                precision and perfection with every buff and press truly
                 Bringing the Shine Back.
               </p>
             </div>
