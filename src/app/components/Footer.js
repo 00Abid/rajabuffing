@@ -15,8 +15,8 @@ export default function Footer() {
                                     src="/logo.webp"
                                     alt="RAJA BUFFING WORKS - Professional Utensil Buffing Services Logo"
                                     className="object-contain"
-                                    width={55}
-                                    height={55}
+                                    width={60}
+                                    height={60}
                                 />
                             </div>
                             <h3 className="text-lg font-bold text-black">

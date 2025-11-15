@@ -19,7 +19,7 @@ export default function Home() {
           <video
             src="/home.mp4"
             alt="Professional utensil buffing process demonstration - RAJA BUFFING WORKS"
-            className="w-full h-full"
+            className="w-full h-full object-cover"
             autoPlay muted loop
           />
           <div className="absolute inset-0 bg-black opacity-60" />

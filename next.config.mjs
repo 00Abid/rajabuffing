@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   /* config options here */
-  reactCompiler: true,
-  
+  // reactCompiler: true, // Disabled - can cause reload issues in dev
+
   // Image optimization configuration
   images: {
     formats: ['image/webp', 'image/avif'],
