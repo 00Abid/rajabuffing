@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# RAJA BUFFING WORKS - Website
 
-## Getting Started
+Professional utensil buffing and polishing services website built with Next.js 16.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Performance Optimizations
+- **OptimizedImage Component** - Automatic WebP/AVIF conversion, lazy loading, blur placeholders
+- **OptimizedVideo Component** - Intersection observer lazy loading, poster images
+- **Responsive Images** - Proper srcset and sizes for all screen sizes
+- **Next.js Image Optimization** - Automatic image optimization and caching
+
+### SEO Features
+- **Dynamic Sitemap** - Auto-generated XML sitemap for all pages
+- **Custom 404 Page** - SEO-friendly error page with navigation
+- **Meta Tags** - Unique titles, descriptions, and keywords per page
+- **Canonical URLs** - Proper canonical tags on all pages
+- **Robots.txt** - Search engine crawling directives
+- **Breadcrumb Navigation** - Visual breadcrumbs on all pages
+
+### Pages
+- **Homepage** - Hero video, about section, capabilities, catalogue download
+- **Products** - Utensil types we service (sauce pots, milk pots, woks, silverware)
+- **Machinery** - Industrial buffing equipment showcase
+- **Blog** - Articles on utensil care and maintenance
+- **Testimonials** - Customer reviews and success stories
+- **Contact** - Contact form and business information
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 16.0.3 (App Router)
+- **React:** 19.2.0
+- **Styling:** Tailwind CSS 4
+- **Icons:** Lucide React
+- **Language:** JavaScript
+- **Deployment:** Vercel
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── blog/             # Blog pages
+│   │   ├── [slug]/       # Dynamic blog post pages
+│   │   └── page.js       # Blog listing
+│   ├── components/       # App-specific components
+│   │   ├── Footer.js
+│   │   ├── Form.js
+│   │   └── Navbar.js
+│   ├── Contact/          # Contact page
+│   ├── Machinery/        # Machinery page
+│   ├── Products/         # Products page
+│   ├── testimonials/     # Testimonials page
+│   ├── layout.js         # Root layout
+│   ├── page.js           # Homepage
+│   ├── sitemap.js        # Dynamic sitemap
+│   ├── robots.txt        # Robots directives
+│   └── globals.css       # Global styles
+└── public/               # Static assets
+    ├── about.webp
+    ├── home.mp4
+    ├── og.webp
+    └── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## 🔒 Security Features
+### Image Optimization
+- Automatic format conversion (WebP, AVIF)
+- Responsive image sizes
+- Lazy loading for below-fold images
+- Blur placeholders for better UX
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🤝 Contributing
 
-## Deploy on Vercel
+This is a private business website. For inquiries, please contact us directly.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with ❤️ using Next.js 16

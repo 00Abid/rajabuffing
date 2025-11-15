@@ -79,13 +79,13 @@ export default function Machinery() {
                             key={machine.id}
                             className="bg-white  rounded-lg shadow-2xl overflow-hidden"
                         >
-                            {/* Vdeo */}
+                            {/* Video */}
                             <div className="relative w-full">
                                 <video
                                     src={machine.image}
-                                    alt={machine.name}
+                                    alt={`${machine.name} - Professional buffing equipment at RAJA BUFFING WORKS`}
                                     className="object-cover"
-                                    autoPlay muted loop
+                                    autoPlay loop muted
                                 />
                             </div>
 

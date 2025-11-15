@@ -71,8 +71,9 @@ export default function Products() {
                             <div className="relative h-48">
                                 <Image
                                     src={product.image}
-                                    alt={product.name}
+                                    alt={`${product.name} - Professional buffing and polishing service by RAJA BUFFING WORKS`}
                                     fill
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                     className="object-cover"
                                 />
                             </div>

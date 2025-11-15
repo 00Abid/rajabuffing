@@ -51,48 +51,6 @@ const blogPosts = [
         date: "2024-12-25",
         readTime: "4 min read"
     },
-    {
-        slug: "kitchen-utensil-materials",
-        title: "Common Kitchen Utensil Materials and Their Care",
-        excerpt: "Guide to different metals and materials used in kitchen utensils and how to care for each type.",
-        date: "2024-12-20",
-        readTime: "6 min read"
-    },
-    {
-        slug: "preventing-utensil-corrosion",
-        title: "Preventing Corrosion on Metal Kitchen Utensils",
-        excerpt: "Essential tips for preventing rust and corrosion on your valuable kitchen tools and utensils.",
-        date: "2024-12-15",
-        readTime: "5 min read"
-    },
-    {
-        slug: "restaurant-equipment-maintenance",
-        title: "Restaurant Equipment Maintenance Checklist",
-        excerpt: "Comprehensive maintenance guide for restaurant owners to keep their kitchen equipment in top condition.",
-        date: "2024-12-10",
-        readTime: "8 min read"
-    },
-    {
-        slug: "eco-friendly-buffing",
-        title: "Eco-Friendly Buffing Solutions for Modern Kitchens",
-        excerpt: "Discover environmentally conscious buffing methods and materials for sustainable kitchen maintenance.",
-        date: "2024-12-05",
-        readTime: "4 min read"
-    },
-    {
-        slug: "antique-utensil-restoration",
-        title: "Restoring Antique Kitchen Utensils",
-        excerpt: "Specialized techniques for restoring and preserving valuable antique kitchenware and utensils.",
-        date: "2024-11-30",
-        readTime: "6 min read"
-    },
-    {
-        slug: "buffing-safety-tips",
-        title: "Safety First: Essential Buffing Safety Guidelines",
-        excerpt: "Important safety precautions and best practices for professional buffing operations.",
-        date: "2024-11-25",
-        readTime: "5 min read"
-    }
 ];
 
 export default function Blog() {

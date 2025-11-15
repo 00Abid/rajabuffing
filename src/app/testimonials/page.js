@@ -1,3 +1,4 @@
+
 export const metadata = {
     title: "Customer Testimonials - RAJA BUFFING WORKS | Client Reviews & Success Stories",
     description: "Read testimonials from satisfied customers who trust RAJA BUFFING WORKS for their utensil buffing and polishing needs.",
@@ -11,25 +12,29 @@ const testimonials = [
         name: "Rajesh Kumar",
         business: "Kumar Restaurant",
         testimonial: "RAJA BUFFING WORKS has been our trusted partner for over 5 years. Their attention to detail and consistent quality is unmatched. Our utensils always look brand new after their service.",
-        rating: 5
+        rating: 5,
+        date: "2024-11-01"
     },
     {
         name: "Priya Sharma",
         business: "Home Chef",
         testimonial: "I was amazed at how they restored my grandmother's old silverware. The mirror finish is absolutely perfect. Highly recommend their services!",
-        rating: 5
+        rating: 5,
+        date: "2024-10-15"
     },
     {
         name: "Vikram Patel",
         business: "Patel Caterers",
         testimonial: "For commercial kitchens, timing is everything. RAJA BUFFING WORKS always delivers on time with exceptional quality. Their 24-48 hour turnaround is perfect for our busy schedule.",
-        rating: 5
+        rating: 5,
+        date: "2024-09-20"
     },
     {
         name: "Anita Desai",
         business: "Desai Kitchenware",
         testimonial: "As a retailer, I send my customers to RAJA BUFFING WORKS for restoration services. The results speak for themselves - complete satisfaction guaranteed.",
-        rating: 5
+        rating: 5,
+        date: "2024-08-10"
     }
 ];
 

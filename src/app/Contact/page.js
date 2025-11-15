@@ -1,4 +1,4 @@
-import { Send, Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import Form from "../components/Form";
 
 export const metadata = {
@@ -11,7 +11,6 @@ export const metadata = {
 };
 
 export default function Contact() {
-
     return (
         <div className="pt-24 pb-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -28,7 +27,7 @@ export default function Contact() {
                         {/* Map */}
                         <div className="h-64 bg-gray-200 rounded-lg overflow-hidden shadow-2xl">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3762.906718117142!2d72.869743!3d19.416435999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDI0JzU5LjIiTiA3MsKwNTInMTEuMSJF!5e0!3m2!1sen!2sin!4v1738732379239!5m2!1sen!2sin"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.906425485513!2d72.86733587467342!3d19.416448641197597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9a5e9d0774d%3A0xa0dfd7a9f517ca9f!2sRaja%20Buffing%20Works!5e0!3m2!1sen!2sin!4v1763190567161!5m2!1sen!2sin"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}

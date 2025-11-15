@@ -18,12 +18,9 @@ export default function Home() {
         <div className="absolute inset-0">
           <video
             src="/home.mp4"
-            alt="Polished utensils"
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover"
+            alt="Professional utensil buffing process demonstration - RAJA BUFFING WORKS"
+            className="w-full h-full"
+            autoPlay muted loop
           />
           <div className="absolute inset-0 bg-black opacity-60" />
         </div>
@@ -53,8 +50,9 @@ export default function Home() {
               <div className="relative w-full h-80 rounded-lg overflow-hidden shadow-2xl">
                 <Image
                   src="/about.webp"
-                  alt="Factory worker"
+                  alt="RAJA BUFFING WORKS factory worker operating professional buffing equipment"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
