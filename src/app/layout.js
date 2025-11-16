@@ -82,7 +82,7 @@ export default function RootLayout({ children }) {
               "description": "Professional utensil buffing and polishing services with 30+ years of experience",
               "url": "https://rajabuffing.vercel.app",
               "telephone": "+91-9096769473",
-              "email": "rajabuffingworks00@gmail.com",
+              "email": "rajabuffingworks02@gmail.com",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Behind Bengali Chawl, Naikpada",

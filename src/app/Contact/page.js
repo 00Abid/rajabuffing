@@ -3,7 +3,7 @@ import Form from "../components/Form";
 
 export const metadata = {
     title: "Contact Us - RAJA BUFFING WORKS | Get a Quote for Buffing Services",
-    description: "Contact RAJA BUFFING WORKS for professional utensil buffing services. Located in Vasai East, Maharashtra. Phone: +91-9096769473, Email: rajabuffingworks00@gmail.com",
+    description: "Contact RAJA BUFFING WORKS for professional utensil buffing services. Located in Vasai East, Maharashtra. Phone: +91-9096769473, Email: rajabuffingworks02@gmail.com",
     keywords: "contact RAJA BUFFING WORKS, buffing services quote, Vasai East location, utensil polishing contact",
     alternates: {
         canonical: 'https://rajabuffing.vercel.app/Contact',
@@ -75,7 +75,7 @@ export default function Contact() {
 
                                 <p className="flex items-center text-gray-600">
                                     <Mail className="mr-2 text-gray-500" size={18} />
-                                    rajabuffingworks00@gmail.com
+                                    rajabuffingworks02@gmail.com
                                 </p>
 
                                 <p className="flex items-center text-gray-600">
