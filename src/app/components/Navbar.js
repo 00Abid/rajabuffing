@@ -1,54 +1,74 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu } from "lucide-react";
+import { Menu, X, ChevronRight, PhoneCall } from "lucide-react";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
     const pathname = usePathname();
+
+    useEffect(() => {
+        const handleScroll = () => setScrolled(window.scrollY > 20);
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     const links = [
         { href: "/", label: "Home" },
-        { href: "/Products", label: "Products" },
+        { href: "/Products", label: "Buffing Services" },
         { href: "/Machinery", label: "Machinery" },
-        { href: "/blog", label: "Blog" },
-        { href: "/testimonials", label: "Testimonials" },
-        { href: "/Contact", label: "Contact" },
+        { href: "/blog", label: "Technical Insights" },
+        { href: "/testimonials", label: "Client Trust" },
+        { href: "/Contact", label: "Get a Quote" },
     ];
 
     return (
-        <nav className="bg-white shadow-sm fixed w-full z-50">
+        <nav
+            className={`fixed w-full z-100 transition-all duration-500 ${scrolled
+                ? "bg-white/90 "
+                : "bg-white py-4"
+                }`}
+        >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between h-16 items-center">
-                    {/* Logo */}
+                <div className="flex justify-between items-center">
+
+                    {/* Logo & Entity Branding */}
                     <Link
                         href="/"
-                        className="flex items-center space-x-2 text-xl font-bold text-black"
+                        className="flex items-center space-x-3 group"
+                        aria-label="Raja Buffing Works - Home"
                     >
-                        <div className="relative">
+                        <div className="relative w-12 h-12">
                             <Image
                                 src="/logo.webp"
                                 alt="RAJA BUFFING WORKS Logo"
-                                className="object-contain"
-                                width={60}
-                                height={60  }
-
+                                fill
+                                priority
+                                className="object-contain transition-transform group-hover:scale-110"
                             />
                         </div>
-                        <span>RAJA BUFFING WORKS</span>
+                        <div className="flex flex-col">
+                            <span className="font-black text-xl tracking-tighter text-slate-900 leading-none">
+                                RAJA BUFFING <span className="text-slate-900">WORKS</span>
+                            </span>
+                            <span className="text-[10px] font-bold text-slate-800 uppercase tracking-widest mt-1">
+                                Matte Specialists
+                            </span>
+                        </div>
                     </Link>
 
-                    {/* Desktop Links */}
-                    <div className="hidden sm:flex items-center space-x-6">
+                    {/* Desktop Navigation: Silver & Slate Shades */}
+                    <div className="hidden lg:flex items-center space-x-1">
                         {links.map((link) => (
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                className={`px-3 py-2 rounded-md text-sm font-medium ${pathname === link.href
-                                    ? "text-black"
-                                    : "text-gray-600 hover:text-black"
+                                className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${pathname === link.href
+                                    ? "bg-slate-800 text-white shadow-lg scale-105"
+                                    : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
                                     }`}
                             >
                                 {link.label}
@@ -56,37 +76,79 @@ export default function Navbar() {
                         ))}
                     </div>
 
+                    {/* CTA: Metallic Gradient Button */}
+                    <div className="hidden lg:block">
+                        <Link
+                            href="tel:+919096769473"
+                            className="flex items-center gap-2 bg-linear-to-r from-slate-400 via-slate-500 to-slate-600 text-white px-5 py-2.5 rounded-xl font-bold hover:from-slate-500 hover:to-slate-700 transition shadow-lg shadow-slate-200"
+                        >
+                            <PhoneCall size={18} />
+                            <span>Call Unit</span>
+                        </Link>
+                    </div>
+
                     {/* Mobile Menu Toggle */}
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="sm:hidden text-gray-600 hover:text-black"
+                        className="lg:hidden p-2 rounded-xl bg-slate-100 text-slate-900"
+                        aria-label="Open Navigation"
                     >
-                        <Menu size={24} />
+                        {isOpen ? <X size={26} /> : <Menu size={26} />}
                     </button>
                 </div>
             </div>
 
-            {/* Mobile Navigation */}
+            {/* Mobile Sidebar (Slide-in) */}
             <div
-                className={`sm:hidden overflow-hidden transition-all duration-300 ${isOpen ? "max-h-full opacity-100" : "max-h-0 opacity-0"
+                className={`fixed inset-y-0 right-0 w-full max-w-xs bg-white shadow-2xl transform transition-transform duration-500 ease-in-out z-101 lg:hidden ${isOpen ? "translate-x-0" : "translate-x-full"
                     }`}
             >
-                <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-300 animate-slideDown">
-                    {links.map((link) => (
-                        <Link
-                            key={link.href}
-                            href={link.href}
-                            onClick={() => setIsOpen(false)}
-                            className={`block px-3 py-2 rounded-md text-base font-medium ${pathname === link.href
-                                ? "text-black"
-                                : "text-gray-600 hover:text-black"
-                                }`}
-                        >
-                            {link.label}
-                        </Link>
-                    ))}
+                <div className="p-8 flex flex-col h-full">
+                    <div className="flex justify-between items-center mb-12">
+                        <span className="font-black text-2xl tracking-tighter text-slate-800">MENU</span>
+                        <button onClick={() => setIsOpen(false)} className="p-2 bg-slate-100 rounded-full"><X size={24} /></button>
+                    </div>
+
+                    <div className="space-y-4">
+                        {links.map((link) => (
+                            <Link
+                                key={link.href}
+                                href={link.href}
+                                onClick={() => setIsOpen(false)}
+                                className={`flex items-center justify-between px-5 py-4 rounded-2xl text-lg font-black tracking-tight transition-all ${pathname === link.href
+                                    ? "bg-slate-800 text-white shadow-xl shadow-slate-300"
+                                    : "bg-slate-50 text-slate-600 hover:bg-slate-100"
+                                    }`}
+                            >
+                                {link.label}
+                                <ChevronRight size={20} className={pathname === link.href ? "text-slate-400" : "text-slate-300"} />
+                            </Link>
+                        ))}
+                    </div>
+
+                    {/* Industrial Info Box */}
+                    <div className="mt-auto pt-10">
+                        <div className="bg-slate-900 rounded-3xl p-6 text-white shadow-inner">
+                            <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Vasai Unit Location</p>
+                            <p className="text-sm opacity-80 leading-relaxed font-medium">
+                                Raja Buffing Works, Vasai East, Maharashtra.
+                            </p>
+                            <div className="mt-6 h-px bg-slate-800 w-full" />
+                            <Link href="/Contact" className="block mt-6 text-center font-bold text-slate-300 hover:text-white transition">
+                                Request Bulk Pricing →
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            {/* Backdrop for Mobile
+            {isOpen && (
+                <div
+                    className="fixed inset-0 bg-black/40 backdrop-blur-sm lg:hidden z-100"
+                    onClick={() => setIsOpen(false)}
+                />
+            )} */}
         </nav>
     );
 }

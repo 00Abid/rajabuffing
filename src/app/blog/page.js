@@ -1,112 +1,118 @@
 import Link from "next/link";
+import { blogPosts } from './../../data/blogPosts'; // Ensure this path matches your file structure
+import { Calendar, Clock, ArrowRight, ShieldCheck, Tag } from "lucide-react";
 
 export const metadata = {
-    title: "Blog - RAJA BUFFING WORKS | Utensil Care Tips & Industry Insights",
-    description: "Learn about utensil maintenance, buffing techniques, and industry best practices from RAJA BUFFING WORKS experts.",
+    title: "Technical Insights | Industrial Buffing & Polishing Blog | Raja Buffing",
+    description: "Expert guides on utensil maintenance, SS 304/316 buffing techniques, HSN codes for job work, and industrial polishing best practices from Raja Buffing Works.",
+    keywords: "SS 304 polishing guide, buffing HSN code, utensil maintenance tips, industrial buffing Vasai, mirror finish techniques",
     alternates: {
-        canonical: 'https://rajabuffing.vercel.app/blog',
+        canonical: 'https://rajabuffing.shop/blog',
     },
 };
 
-const blogPosts = [
-    {
-        slug: "utensil-maintenance-guide",
-        title: "Complete Guide to Utensil Maintenance and Care",
-        excerpt: "Learn how to properly maintain your kitchen utensils to extend their lifespan and keep them looking their best.",
-        date: "2025-01-15",
-        readTime: "5 min read"
-    },
-    {
-        slug: "benefits-professional-buffing",
-        title: "Why Choose Professional Utensil Buffing Services",
-        excerpt: "Discover the advantages of professional buffing over DIY methods and how it can save you time and money.",
-        date: "2025-01-10",
-        readTime: "4 min read"
-    },
-    {
-        slug: "commercial-kitchen-equipment",
-        title: "Maintaining Commercial Kitchen Equipment",
-        excerpt: "Essential maintenance tips for restaurants and commercial kitchens to ensure food safety and equipment longevity.",
-        date: "2025-01-05",
-        readTime: "6 min read"
-    },
-    {
-        slug: "mirror-finish-techniques",
-        title: "Achieving Perfect Mirror Finish on Kitchen Utensils",
-        excerpt: "Master the art of mirror finishing with our professional techniques and equipment for stunning results.",
-        date: "2025-01-01",
-        readTime: "7 min read"
-    },
-    {
-        slug: "silverware-restoration",
-        title: "Silverware Restoration: Bringing Back the Shine",
-        excerpt: "Complete guide to restoring tarnished silverware and maintaining its beauty for years to come.",
-        date: "2024-12-28",
-        readTime: "5 min read"
-    },
-    {
-        slug: "buffing-vs-polishing",
-        title: "Buffing vs Polishing: Understanding the Difference",
-        excerpt: "Learn the technical differences between buffing and polishing processes and when to use each method.",
-        date: "2024-12-25",
-        readTime: "4 min read"
-    },
-];
-
 export default function Blog() {
-    return (
-        <div className="pt-24 pb-16">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Breadcrumb Schema */}
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify({
-                            "@context": "https://schema.org",
-                            "@type": "BreadcrumbList",
-                            "itemListElement": [
-                                {
-                                    "@type": "ListItem",
-                                    "position": 1,
-                                    "name": "Home",
-                                    "item": "https://rajabuffing.vercel.app"
-                                },
-                                {
-                                    "@type": "ListItem",
-                                    "position": 2,
-                                    "name": "Blog",
-                                    "item": "https://rajabuffing.vercel.app/blog"
-                                }
-                            ]
-                        })
-                    }}
-                />
-                <h1 className="text-3xl font-bold text-center mb-12 text-black">
-                    Our Blog
-                </h1>
-                <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-                    Expert insights, tips, and industry knowledge from RAJA BUFFING WORKS
-                </p>
+    // Convert the blogPosts object into an array for mapping
+    const postsArray = Object.keys(blogPosts).map((slug) => ({
+        slug,
+        ...blogPosts[slug],
+    }));
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {blogPosts.map((post) => (
-                        <article key={post.slug} className="bg-white border border-gray-300 rounded-lg shadow-lg overflow-hidden">
-                            <div className="p-6">
-                                <h2 className="text-xl font-semibold mb-2 text-black">
-                                    <Link href={`/blog/${post.slug}`} className="hover:text-blue-600">
-                                        {post.title}
-                                    </Link>
-                                </h2>
-                                <p className="text-gray-600 mb-4">{post.excerpt}</p>
-                                <div className="flex justify-between text-sm text-gray-500">
-                                    <span>{post.date}</span>
-                                    <span>{post.readTime}</span>
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Raja Buffing Technical Insights",
+        "description": "Professional metal finishing and industrial buffing knowledge base.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Raja Buffing Works"
+        },
+        "blogPost": postsArray.map(post => ({
+            "@type": "BlogPosting",
+            "headline": post.title,
+            "datePublished": post.date,
+            "url": `https://rajabuffing.shop/blog/${post.slug}`
+        }))
+    };
+
+    return (
+        <main className="pt-32 pb-24 bg-white">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+
+            <div className="max-w-7xl mx-auto px-6">
+
+                {/* Blog Header: Authority & Context */}
+                <header className="mb-20 max-w-3xl border-l-8 border-slate-900 pl-8">
+                    <div className="flex items-center gap-2 text-slate-500 font-bold text-xs uppercase tracking-[0.2em] mb-4">
+                        <ShieldCheck size={16} className="text-slate-800" /> Verified Technical Knowledge Base
+                    </div>
+                    <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none text-slate-900 mb-8">
+                        Technical <br /> <span className="text-slate-400 italic font-medium">Insights</span>
+                    </h1>
+                    <p className="text-xl text-slate-600 font-medium leading-relaxed italic">
+                        &quot;Explore our industrial deep-dives on metallurgy, HSN compliance, and the science of the perfect mirror finish.&quot;
+                    </p>
+                </header>
+
+                {/* Dynamic Grid: Mapping from blogPosts data */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+                    {postsArray.map((post) => (
+                        <article
+                            key={post.slug}
+                            className="group relative bg-slate-50 rounded-[2.5rem] p-10 border border-slate-100 hover:bg-white hover:shadow-2xl hover:border-slate-200 transition-all duration-500 flex flex-col"
+                        >
+                            <div className="flex justify-between items-start mb-8">
+                                <span className="px-4 py-1.5 bg-slate-900 text-white rounded-full text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">
+                                    <Tag size={12} /> {post.category}
+                                </span>
+                                <div className="flex items-center gap-4 text-slate-400 text-[10px] font-bold uppercase tracking-widest">
+                                    <span className="flex items-center gap-1"><Calendar size={14} /> {post.date}</span>
+                                    <span className="flex items-center gap-1"><Clock size={14} /> {post.readTime}</span>
                                 </div>
                             </div>
+
+                            <h2 className="text-3xl font-black text-slate-900 mb-4 tracking-tight leading-tight group-hover:text-slate-600 transition-colors">
+                                <Link href={`/blog/${post.slug}`}>
+                                    {post.title}
+                                </Link>
+                            </h2>
+
+                            <p className="text-slate-500 text-lg mb-10 leading-relaxed font-medium grow">
+                                {post.excerpt}
+                            </p>
+
+                            <Link
+                                href={`/blog/${post.slug}`}
+                                className="inline-flex items-center gap-2 font-black uppercase text-xs tracking-[0.2em] text-slate-900 group-hover:gap-4 transition-all"
+                            >
+                                Read Technical Paper <ArrowRight size={16} />
+                            </Link>
                         </article>
                     ))}
                 </div>
+
+                {/* Newsletter / Trust Signal Footer */}
+                <footer className="mt-24 p-10 md:p-16 bg-slate-900 rounded-[3.5rem] text-white flex flex-col md:flex-row items-center justify-between gap-10 shadow-2xl relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32 blur-3xl" />
+                    <div className="max-w-xl relative z-10">
+                        <h3 className="text-3xl md:text-4xl font-black mb-4 italic tracking-tighter uppercase leading-none">Stay Updated on <br /><span className="text-slate-400 font-medium">Metal Trends</span></h3>
+                        <p className="text-slate-400 font-medium text-lg leading-relaxed">
+                            Subscribe to receive technical research on **SS buffing wheel HSN codes** and **export-quality** finishing standards directly in your inbox.
+                        </p>
+                    </div>
+                    <div className="flex w-full md:w-auto gap-3 relative z-10">
+                        <input
+                            type="email"
+                            placeholder="email@company.com"
+                            className="bg-slate-800 border-none rounded-2xl px-6 py-5 w-full md:w-72 focus:ring-2 focus:ring-slate-400 text-white placeholder:text-slate-500 font-bold"
+                        />
+                        <button className="bg-white text-slate-900 px-8 py-5 rounded-2xl font-black uppercase tracking-tighter hover:bg-slate-200 transition-all shadow-xl active:scale-95">
+                            Join
+                        </button>
+                    </div>
+                </footer>
+
             </div>
-        </div>
+        </main>
     );
 }
