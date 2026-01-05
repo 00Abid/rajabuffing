@@ -38,7 +38,7 @@ export default function Footer() {
                     <div>
                         <h3 className="mb-6 text-xs font-black uppercase tracking-[0.3em] text-slate-900">Sitemap</h3>
                         <ul className="space-y-3">
-                            {['Home', 'Products', 'Machinery', 'Blog', 'Testimonials', 'Contact'].map((item) => (
+                            {['Home', 'Products', 'Machinery', 'blog', 'testimonials', 'Contact'].map((item) => (
                                 <li key={item}>
                                     <Link
                                         href={item === 'Home' ? '/' : `/${item}`}
