@@ -4,16 +4,16 @@ import { productData } from '../data/productData';
 export default function sitemap() {
   const baseUrl = "https://rajabuffing.shop";
 
-  // Main static pages
-  const mainPages = [
+  // 1. Static Core Pages
+  const staticPages = [
     '',
     '/Products',
     '/Machinery',
     '/blog',
     '/testimonials',
     '/Contact',
-    '/privacy', // Add this
-    '/terms',   // Add this
+    '/privacy',
+    '/terms',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -21,7 +21,7 @@ export default function sitemap() {
     priority: route === '' ? 1 : 0.8,
   }));
 
-  // Dynamic Blog Posts
+  // 2. Dynamic Blog Posts (High Priority Content)
   const blogUrls = Object.entries(blogPosts).map(([slug, post]) => ({
     url: `${baseUrl}/blog/${slug}`,
     lastModified: new Date(post.date),
@@ -29,13 +29,13 @@ export default function sitemap() {
     priority: 0.7,
   }));
 
-  // Dynamic Products
+  // 3. Dynamic Product Pages (Money Pages)
   const productUrls = Object.keys(productData).map((slug) => ({
     url: `${baseUrl}/Products/${slug}`,
     lastModified: new Date(),
-    changeFrequency: 'weekly',
+    changeFrequency: 'daily', // Increased frequency for products
     priority: 0.9,
   }));
 
-  return [...mainPages, ...blogUrls, ...productUrls];
+  return [...staticPages, ...blogUrls, ...productUrls];
 }

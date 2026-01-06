@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
 // TOP 0.1% METADATA ENGINE
 export const metadata = {
   metadataBase: new URL('https://rajabuffing.shop'),
@@ -29,6 +30,11 @@ export const metadata = {
   alternates: {
     canonical: '/',
   },
+  verification: {
+    msvalidate: "B406A713428734B7264507731D5DC69A",
+    google: "EkGqUbfh-N6cCARPau3htFfsTC4zILcqZWkn-WhgOHA"
+  },
+
 
   openGraph: {
     title: "RAJA BUFFING WORKS - Premium Industrial Polishing",
@@ -109,6 +115,9 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" className="scroll-smooth" data-scroll-behavior="smooth">
+      <head>
+
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white`}>
         {/* Dynamic Schema Injection */}
         <script

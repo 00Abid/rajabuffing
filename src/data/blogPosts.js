@@ -84,4 +84,5 @@ export const blogPosts = {
       <p>For high-volume caterers, we recommend a <strong>6-month professional re-buffing cycle</strong>. This removes the accumulated surface oxidation and restores the food-grade safety of the utensil, ensuring you pass every health department audit with a 5-star equipment rating.</p>
     `
   }
+
 };

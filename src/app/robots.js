@@ -3,7 +3,7 @@ export default function robots() {
         rules: {
             userAgent: '*',
             allow: '/',
-            disallow: ['/private/', '/admin/'],
+            disallow: ['/private/', '/admin/', '/api/'],
         },
         sitemap: 'https://rajabuffing.shop/sitemap.xml',
     }
