@@ -36,7 +36,7 @@ export default function PrivacyPolicy() {
                             <FileText size={20} className="text-slate-400" /> 1. Data Collection (B2B)
                         </h2>
                         <p className="text-slate-600 leading-relaxed">
-                            At Raja Buffing Works, we collect information necessary to provide professional industrial finishing services. This includes company names, contact details, and project specifications (metal grades, quantities, and technical drawings) required for <strong>HSN 7323 job-work compliance</strong> in Vasai, Maharashtra.
+                            At Raja Buffing Works, we collect information necessary to provide professional industrial finishing services. This includes company names, contact details, and project specifications (metal grades, quantities, and technical drawings) required for <strong><Link href="/blog/hsn-code-7323-job-work-compliance" className="text-blue-600 hover:underline">HSN 7323 job-work compliance</Link></strong> in Vasai, Maharashtra.
                         </p>
                     </section>
 
@@ -80,7 +80,7 @@ export default function PrivacyPolicy() {
                             <Globe size={20} className="text-slate-400" /> 4. Cookies & Analytics
                         </h2>
                         <p className="text-slate-600 leading-relaxed">
-                            Our website (rajabuffing.shop) uses minimal cookies to enhance user experience and analyze site traffic via Google Analytics. This data is anonymized and used solely to improve our <strong>technical insights</strong> blog and product catalogs.
+                            Our website (rajabuffing.shop) uses minimal cookies to enhance user experience and analyze site traffic via Google Analytics. This data is anonymized and used solely to improve our <strong><Link href="/blog" className="text-blue-600 hover:underline">technical insights</Link></strong> blog and <Link href="/Products" className="text-blue-600 hover:underline">product catalogs</Link>.
                         </p>
                     </section>
                 </div>

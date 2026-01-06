@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Breadcrumbs from "../app/components/Breadcrum";
+import Breadcrumbs from "./components/Breadcrum";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -108,7 +108,7 @@ export default function RootLayout({ children }) {
   };
 
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" data-scroll-behavior="smooth">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white`}>
         {/* Dynamic Schema Injection */}
         <script

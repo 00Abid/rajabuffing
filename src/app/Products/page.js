@@ -112,7 +112,9 @@ export default function Products() {
                                         src={product.image}
                                         alt={`${product.name} buffing by Raja Buffing Works`}
                                         fill
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                         className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                        priority={product.id <= 2}
                                     />
                                     <div className="absolute top-4 left-4 bg-slate-900/80 backdrop-blur-md text-white px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest">
                                         Verified Batch
@@ -162,9 +164,9 @@ export default function Products() {
                             ensure mirror-finish compliance.
                         </p>
                     </div>
-                    <button className="bg-white text-slate-900 px-10 py-5 rounded-2xl font-black uppercase tracking-tighter hover:bg-slate-200 transition-all flex items-center gap-3 shrink-0">
+                    <Link href="/Contact" className="bg-white text-slate-900 px-10 py-5 rounded-2xl font-black uppercase tracking-tighter hover:bg-slate-200 transition-all flex items-center gap-3 shrink-0">
                         Request Bulk Pricing <Star size={20} className="fill-slate-900" />
-                    </button>
+                    </Link>
                 </footer>
             </div>
         </main>

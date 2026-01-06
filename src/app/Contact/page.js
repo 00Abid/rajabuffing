@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Phone, Mail, MapPin, Clock, MessageSquare, Globe, ShieldCheck } from "lucide-react";
 import Form from "../components/Form";
 
@@ -70,7 +71,7 @@ export default function Contact() {
                     </h1>
                     <p className="text-xl text-slate-600 font-medium leading-relaxed italic">
                         Ready to scale your production? Contact our Vasai unit for
-                        high-volume job-work, matte finishing, and mirror polishing inquiries.
+                        high-volume job-work, <Link href="/Products/specialty-matte-finishing" className="text-slate-900 border-b border-slate-300 hover:border-slate-900 transition-colors">matte finishing</Link>, and <Link href="/Products/commercial-utensils-polishing" className="text-slate-900 border-b border-slate-300 hover:border-slate-900 transition-colors">mirror polishing</Link> inquiries.
                     </p>
                 </header>
 

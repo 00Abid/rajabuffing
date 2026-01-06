@@ -44,10 +44,11 @@ export default function Navbar() {
                         <div className="relative w-12 h-12">
                             <Image
                                 src="/logo.webp"
-                                alt="RAJA BUFFING WORKS Logo"
+                                alt="RAJA BUFFING WORKS LOGO"
                                 fill
+                                sizes="(max-width: 768px) 50px, 100px"
                                 priority
-                                className="object-contain transition-transform group-hover:scale-110"
+                                className="object-contain transition-transform group-hover:scale-110 w"
                             />
                         </div>
                         <div className="flex flex-col">
@@ -80,6 +81,7 @@ export default function Navbar() {
                     <div className="hidden lg:block">
                         <Link
                             href="tel:+919096769473"
+                            aria-label="Call Raja Buffing Unit"
                             className="flex items-center gap-2 bg-linear-to-r from-slate-400 via-slate-500 to-slate-600 text-white px-5 py-2.5 rounded-xl font-bold hover:from-slate-500 hover:to-slate-700 transition shadow-lg shadow-slate-200"
                         >
                             <PhoneCall size={18} />
@@ -106,7 +108,7 @@ export default function Navbar() {
                 <div className="p-8 flex flex-col h-full">
                     <div className="flex justify-between items-center mb-12">
                         <span className="font-black text-2xl tracking-tighter text-slate-800">MENU</span>
-                        <button onClick={() => setIsOpen(false)} className="p-2 bg-slate-100 rounded-full"><X size={24} /></button>
+                        <button onClick={() => setIsOpen(false)} aria-label="Close Navigation" className="p-2 bg-slate-100 rounded-full"><X size={24} /></button>
                     </div>
 
                     <div className="space-y-4">
@@ -125,30 +127,16 @@ export default function Navbar() {
                             </Link>
                         ))}
                     </div>
-
-                    {/* Industrial Info Box */}
-                    <div className="mt-auto pt-10">
-                        <div className="bg-slate-900 rounded-3xl p-6 text-white shadow-inner">
-                            <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Vasai Unit Location</p>
-                            <p className="text-sm opacity-80 leading-relaxed font-medium">
-                                Raja Buffing Works, Vasai East, Maharashtra.
-                            </p>
-                            <div className="mt-6 h-px bg-slate-800 w-full" />
-                            <Link href="/Contact" className="block mt-6 text-center font-bold text-slate-300 hover:text-white transition">
-                                Request Bulk Pricing →
-                            </Link>
-                        </div>
-                    </div>
                 </div>
             </div>
 
-            {/* Backdrop for Mobile
+            {/* Backdrop for Mobile */}
             {isOpen && (
                 <div
                     className="fixed inset-0 bg-black/40 backdrop-blur-sm lg:hidden z-100"
                     onClick={() => setIsOpen(false)}
                 />
-            )} */}
+            )}
         </nav>
     );
 }

@@ -5,7 +5,7 @@ export const productData = {
         image: "/saucepot.webp",
         h1: "Specialist Sauce Pot Buffing & Polishing in Vasai East",
         description: "Export-grade mirror finishing for stainless steel sauce pots. Specialized in SS 304 and 316 grades for commercial kitchenware manufacturers.",
-        longDescription: "Our sauce pot buffing process is engineered for heavy-duty commercial use. We focus on the 'thermal blueing' removal caused during the welding of handles and base-capping. By utilizing high-RPM automatic buffing motors, we ensure that the transition between the pot body and the induction base is seamless and high-luster.",
+        longDescription: "Our sauce pot buffing process is engineered for heavy-duty commercial use. We focus on the 'thermal blueing' removal caused during the welding of handles and base-capping. By utilizing high-RPM automatic buffing motors, we ensure that the transition between the pot body and the <a href='/blog/commercial-kitchen-maintenance' class='text-blue-600 hover:underline'>induction base</a> is seamless and high-luster.",
         meta: "Professional sauce pot buffing services in Vasai. High-luster mirror finish for commercial and domestic kitchenware. Batch job-work specialist.",
         features: ["Mirror Luster (#8 Finish)", "Food-Grade Passivation", "Seamless Rim Polishing", "Handle-Joint Stress Polishing"],
         technicalSpecs: {
@@ -27,7 +27,7 @@ export const productData = {
         image: "/milkpot.webp",
         h1: "Milk Pot Buffing Services: Mirror Finish Specialists",
         description: "High-precision buffing for milk pots and dairy containers. We remove microscopic pits to ensure a hygienic, non-stick surface.",
-        longDescription: "Milk pots require a specific 'Deep-Neck' buffing technique. At Raja Buffing Works, we use customized internal mops that reach the bottom-corner radius of the Pateela. This prevents milk solids from sticking and ensures the utensil is 100% easy to sanitize, meeting industrial dairy standards.",
+        longDescription: "Milk pots require a specific 'Deep-Neck' buffing technique. At Raja Buffing Works, we use customized internal mops that reach the bottom-corner radius of the Pateela. This prevents milk solids from sticking and ensures the utensil is 100% easy to sanitize, meeting <a href='/blog/hsn-code-7323-job-work-compliance' class='text-blue-600 hover:underline'>industrial dairy standards</a>.",
         meta: "Expert milk pot (pateela) polishing in Vasai. specialized in mirror finish and matte textures for dairy equipment manufacturers.",
         features: ["Bacteria-Resistant Smoothness", "Deep-Neck Internal Buffing", "Edge Bidding & Smoothing", "Non-Porous Surface Seal"],
         technicalSpecs: {
@@ -49,7 +49,7 @@ export const productData = {
         image: "/kadhai.webp",
         h1: "Industrial Wok Pan Buffing: Durable High-Heat Finishes",
         description: "Specialized buffing for heavy-duty woks and frying pans. We provide a finish that maintains luster even under high commercial heat.",
-        longDescription: "Woks and Kadhais undergo extreme temperature cycles. Our buffing process includes a 'mechanical seal' stage where high-pressure buffing wheels close the pores of the metal. This makes the wok more resistant to carbon buildup and 'rainbowing' (heat tints) during commercial frying operations.",
+        longDescription: "Woks and Kadhais undergo extreme temperature cycles. Our buffing process includes a 'mechanical seal' stage where high-pressure buffing wheels close the pores of the metal. This makes the wok more resistant to carbon buildup and <a href='/blog/commercial-kitchen-maintenance' class='text-blue-600 hover:underline'>'rainbowing' (heat tints)</a> during commercial frying operations.",
         meta: "Heavy-duty wok and kadhai buffing services in Vasai East. High-heat resistant mirror and matte finishes for professional cookware.",
         features: ["Heat-Tint Removal", "Heavy-Duty Surface Leveling", "Rivet-Area Precision Polishing", "Satin Matte Exterior Option"],
         technicalSpecs: {
@@ -71,7 +71,7 @@ export const productData = {
         image: "/silverware.webp",
         h1: "Premium Silverware Restoration & Buffing in Maharashtra",
         description: "Delicate restoration of tarnished silverware. We restore the original brilliance of heirlooms and designer collections.",
-        longDescription: "Silverware restoration requires a low-heat, high-finesse approach. Using 'Jeweler’s Rouge' and ultra-soft Swansdown mops, we remove years of oxidation without eroding the hallmark or delicate engravings. Our process is trusted by retailers and collectors across the Mumbai region.",
+        longDescription: "Silverware restoration requires a low-heat, high-finesse approach. Using 'Jeweler’s Rouge' and ultra-soft Swansdown mops, we remove years of oxidation without eroding the hallmark or delicate engravings. Our process is trusted by retailers and collectors across the <a href='/Contact' class='text-blue-600 hover:underline'>Mumbai region</a>.",
         meta: "Professional silverware restoration in Vasai. Delicate buffing for tarnished silver items. Expert care for antiques and retail silverware.",
         features: ["Low-Heat Buffing Technique", "Anti-Tarnish Layer Prep", "Ornate Detail Cleaning", "Gentle Cloth Mop Finish"],
         technicalSpecs: {
@@ -93,7 +93,7 @@ export const productData = {
         image: "/commercial.webp",
         h1: "Bulk Hotelware & Catering Equipment Polishing in Vasai",
         description: "High-volume buffing for hotel serving trays, buffet sets, and chafing dishes. Optimized for speed and uniformity.",
-        longDescription: "In the hospitality industry, presentation is everything. We handle bulk job-work for catering sets and serving platters. Our facility is capable of processing thousands of units with a 24-hour turnaround, ensuring every piece matches in luster and reflection for large-scale events.",
+        longDescription: "In the hospitality industry, <a href='/blog/commercial-kitchen-maintenance' class='text-blue-600 hover:underline'>presentation is everything</a>. We handle bulk job-work for catering sets and serving platters. Our facility is capable of processing thousands of units with a 24-hour turnaround, ensuring every piece matches in luster and reflection for large-scale events.",
         meta: "Commercial hotelware and buffet equipment buffing. Bulk polishing services for serving trays and catering sets in Vasai East.",
         features: ["Uniform Batch Luster", "Scratch-Resistant Polishing", "Food-Safe Compound Usage", "Stacking-Mark Removal"],
         technicalSpecs: {
@@ -115,7 +115,7 @@ export const productData = {
         image: "/matte.webp",
         h1: "The Matte Specialist: Premium Satin Finishes in Vasai",
         description: "Exclusive fingerprint-resistant matte textures for designer cookware and export-grade utensils.",
-        longDescription: "As the designated 'Matte Specialist' of Vasai, we provide the most consistent satin finishes in the industry. Using specialized abrasive belts and circular matte machines, we create a unidirectional grain that feels smooth to the touch while hiding fingerprints—perfect for premium SS cookware brands.",
+        longDescription: "As the designated 'Matte Specialist' of Vasai, we provide the most consistent <a href='/blog/matte-specialist-finishing-process' class='text-blue-600 hover:underline'>satin finishes</a> in the industry. Using specialized abrasive belts and circular matte machines, we create a unidirectional grain that feels smooth to the touch while hiding fingerprints—perfect for premium SS cookware brands.",
         meta: "Premium matte and satin finish services for stainless steel utensils. fingerprint-resistant finishing for export-quality cookware.",
         features: ["Fingerprint-Resistant Satin", "Unidirectional Grain Pattern", "Modern Industrial Look", "Export-Ready Aesthetics"],
         technicalSpecs: {

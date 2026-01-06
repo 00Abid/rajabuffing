@@ -37,7 +37,7 @@ export default function TermsAndConditions() {
                         </h2>
                         <div className="prose prose-slate max-w-none text-slate-600 font-medium">
                             <p>
-                                Raja Buffing Works provides professional metal finishing services, including but not limited to, <strong>Mirror Polishing, Matte/Satin Finishing, and Restoration</strong>. All work is conducted under <strong>HSN Code 7323</strong> protocols. Client-provided materials must be free from structural defects that could compromise the buffing machinery.
+                                Raja Buffing Works provides professional metal finishing services, including but not limited to, <strong><Link href="/Products/commercial-utensils-polishing" className="text-blue-600 hover:underline">Mirror Polishing</Link>, <Link href="/Products/specialty-matte-finishing" className="text-blue-600 hover:underline">Matte/Satin Finishing</Link>, and Restoration</strong>. All work is conducted under <strong><Link href="/blog/hsn-code-7323-job-work-compliance" className="text-blue-600 hover:underline">HSN Code 7323</Link> protocols</strong>. Client-provided materials must be free from structural defects that could compromise the buffing machinery.
                             </p>
                         </div>
                     </section>
@@ -49,7 +49,7 @@ export default function TermsAndConditions() {
                         </h2>
                         <div className="prose prose-slate max-w-none text-slate-600 font-medium">
                             <p>
-                                Standard turnaround for batch orders in the <strong>Vasai Industrial Hub</strong> is 24-48 hours. Large-scale industrial orders (5,000+ units) are subject to scheduled production timelines. Raja Buffing Works is not liable for delays caused by raw material discrepancies or power outages in the Maharashtra industrial grid.
+                                Standard turnaround for batch orders in the <strong><Link href="/Contact" className="text-blue-600 hover:underline">Vasai Industrial Hub</Link></strong> is 24-48 hours. Large-scale industrial orders (5,000+ units) are subject to scheduled production timelines. Raja Buffing Works is not liable for delays caused by raw material discrepancies or power outages in the Maharashtra industrial grid.
                             </p>
                         </div>
                     </section>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { blogPosts } from './../../data/blogPosts'; // Ensure this path matches your file structure
 import { Calendar, Clock, ArrowRight, ShieldCheck, Tag } from "lucide-react";
+import Newsletter from "../components/NewLetter";
 
 export const metadata = {
     title: "Technical Insights | Industrial Buffing & Polishing Blog | Raja Buffing",
@@ -65,7 +66,7 @@ export default function Blog() {
                                 <span className="px-4 py-1.5 bg-slate-900 text-white rounded-full text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">
                                     <Tag size={12} /> {post.category}
                                 </span>
-                                <div className="flex items-center gap-4 text-slate-400 text-[10px] font-bold uppercase tracking-widest">
+                                <div className="flex items-center gap-4 text-slate-500 text-[10px] font-bold uppercase tracking-widest">
                                     <span className="flex items-center gap-1"><Calendar size={14} /> {post.date}</span>
                                     <span className="flex items-center gap-1"><Clock size={14} /> {post.readTime}</span>
                                 </div>
@@ -93,23 +94,7 @@ export default function Blog() {
 
                 {/* Newsletter / Trust Signal Footer */}
                 <footer className="mt-24 p-10 md:p-16 bg-slate-900 rounded-[3.5rem] text-white flex flex-col md:flex-row items-center justify-between gap-10 shadow-2xl relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32 blur-3xl" />
-                    <div className="max-w-xl relative z-10">
-                        <h3 className="text-3xl md:text-4xl font-black mb-4 italic tracking-tighter uppercase leading-none">Stay Updated on <br /><span className="text-slate-400 font-medium">Metal Trends</span></h3>
-                        <p className="text-slate-400 font-medium text-lg leading-relaxed">
-                            Subscribe to receive technical research on **SS buffing wheel HSN codes** and **export-quality** finishing standards directly in your inbox.
-                        </p>
-                    </div>
-                    <div className="flex w-full md:w-auto gap-3 relative z-10">
-                        <input
-                            type="email"
-                            placeholder="email@company.com"
-                            className="bg-slate-800 border-none rounded-2xl px-6 py-5 w-full md:w-72 focus:ring-2 focus:ring-slate-400 text-white placeholder:text-slate-500 font-bold"
-                        />
-                        <button className="bg-white text-slate-900 px-8 py-5 rounded-2xl font-black uppercase tracking-tighter hover:bg-slate-200 transition-all shadow-xl active:scale-95">
-                            Join
-                        </button>
-                    </div>
+                    <Newsletter />
                 </footer>
 
             </div>

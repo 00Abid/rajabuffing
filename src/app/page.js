@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   CheckCircle, Download, Award, MapPin, Factory,
   History, ShieldCheck, Zap, ArrowRight, Settings
@@ -15,7 +16,7 @@ export const metadata = {
     description: 'Expert industrial polishing and utensil buffing services with 30+ years of verifiable expertise.',
     publishedTime: '2026-01-01T04:30:00.000Z',
     authors: ['Raja Buffing Works'],
-    images: [{ url: 'https://rajabuffing.shop/og.jpg' }],
+    images: [{ url: '/og.webp' }],
   },
 };
 
@@ -52,8 +53,18 @@ export default function Home() {
       {/* HERO SECTION: GEO-LOCATION & NICHE AUTHORITY */}
       <section className="relative h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <video src="/home.mp4" className="w-full h-full object-cover brightness-[0.35]" autoPlay muted loop playsInline />
-          <div className="absolute inset-0 bg-linear-to-b from-transparent via-slate-900/40 to-slate-900" />
+          <video
+            src="/home.mp4"
+            className="w-full h-full object-cover brightness-[0.35]"
+            autoPlay
+            muted
+            loop
+            playsInline
+            title="Industrial buffing process showcase"
+            poster="/home.webp"
+          >
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div className="relative max-w-7xl mx-auto px-6 w-full">
           <div className="max-w-4xl">
@@ -68,12 +79,12 @@ export default function Home() {
               Engineering premium mirror and satin textures for over 30 years.
             </p>
             <div className="flex flex-wrap gap-5">
-              <button className="bg-slate-100 text-slate-900 px-10 py-5 font-black rounded-2xl hover:bg-white transition-all shadow-2xl flex items-center gap-2 uppercase tracking-tight">
+              <Link href="/Contact" aria-label="Get a bulk quote for buffing services" className="bg-slate-100 text-slate-900 px-10 py-5 font-black rounded-2xl hover:bg-white transition-all shadow-2xl flex items-center gap-2 uppercase tracking-tight">
                 Get Bulk Quote <ArrowRight size={20} />
-              </button>
-              <button className="bg-transparent border-2 border-slate-500/50 text-slate-100 px-10 py-5 font-black rounded-2xl hover:bg-slate-100/10 transition-all uppercase tracking-tight">
+              </Link>
+              <Link href="/Products" aria-label="View our buffing capabilities" className="bg-transparent border-2 border-slate-500/50 text-slate-100 px-10 py-5 font-black rounded-2xl hover:bg-slate-100/10 transition-all uppercase tracking-tight">
                 Our Capabilities
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -107,8 +118,11 @@ export default function Home() {
                 <Image
                   src="/about.webp"
                   alt="Industrial Matte Finishing Specialist in Vasai"
+                  title="Raja Buffing Works Industrial Process"
+                  aria-label="Industrial metal buffing video"
                   fill
-                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover "
                 />
               </div>
             </div>
@@ -156,7 +170,7 @@ export default function Home() {
               { title: "Lustre Audit", desc: "Final manual inspection for depth of shine and texture consistency." }
             ].map((step, i) => (
               <div key={i} className="relative group">
-                <div className="text-8xl font-black text-slate-800/50 absolute -top-12 left-0 transition-colors group-hover:text-slate-700">0{i + 1}</div>
+                <div className="text-8xl font-black text-slate-800/70 absolute -top-12 left-0 transition-colors group-hover:text-slate-700">0{i + 1}</div>
                 <h3 className="text-2xl font-bold mb-4 relative z-10">{step.title}</h3>
                 <p className="text-slate-400 relative z-10 leading-relaxed font-medium">{step.desc}</p>
               </div>
@@ -202,9 +216,9 @@ export default function Home() {
             <a href="/catalogue.pdf" download className="bg-slate-900 text-white px-14 py-6 rounded-2xl font-black flex items-center justify-center gap-3 hover:bg-slate-800 transition-all shadow-2xl uppercase tracking-tighter">
               <Download size={24} /> Get Technical Catalogue
             </a>
-            <button className="bg-white text-slate-900 border-2 border-slate-900 px-14 py-6 rounded-2xl font-black hover:bg-slate-50 transition-all uppercase tracking-tighter shadow-lg">
+            <Link href="/Contact" className="bg-white text-slate-900 border-2 border-slate-900 px-14 py-6 rounded-2xl font-black hover:bg-slate-50 transition-all uppercase tracking-tighter shadow-lg flex items-center justify-center">
               Visit Vasai Facility
-            </button>
+            </Link>
           </div>
         </div>
         <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-slate-100 rounded-full blur-[100px] opacity-50" />

@@ -29,8 +29,11 @@ export default function Footer() {
                             The designated Matte Specialist of Vasai. Providing export-grade
                             finishing for commercial kitchenware and industrial utensils across Maharashtra since 1994.
                         </p>
-                        <div className="flex items-center gap-2 text-[10px] font-bold text-slate-400 uppercase tracking-widest border border-slate-200 w-fit px-3 py-1 rounded-full">
+                        <div className="flex items-center gap-2 text-[10px] font-bold text-slate-500 uppercase tracking-widest border border-slate-200 w-fit px-3 py-1 rounded-full">
                             <ShieldCheck size={12} className="text-black" /> HSN 7323 Compliant Unit
+                        </div>
+                        <div className="flex items-center gap-2 text-[10px] font-bold text-slate-500 uppercase tracking-widest border border-slate-200 w-fit px-3 py-1 rounded-full">
+                            <ShieldCheck size={12} className="text-black" /> ISO 9001:2015 Certified
                         </div>
                     </div>
 
@@ -83,11 +86,11 @@ export default function Footer() {
 
                 {/* Bottom Bar: Final SEO signals */}
                 <div className="pt-12 mt-16 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-6">
-                    <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                    <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">
                         © {new Date().getFullYear()} RAJA BUFFING WORKS.
                         <span className="ml-2 border-l border-slate-300 pl-2">Vasai East, Maharashtra 401208</span>
                     </p>
-                    <div className="flex gap-6 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                    <div className="flex gap-6 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
                         <Link href="/privacy" className="hover:text-slate-900 transition-colors">Privacy Policy</Link>
                         <Link href="/terms" className="hover:text-slate-900 transition-colors">B2B Terms</Link>
                     </div>

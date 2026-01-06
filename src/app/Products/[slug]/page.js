@@ -83,6 +83,7 @@ export default async function ProductPage({ params }) {
                                 src={product.image}
                                 alt={product.h1}
                                 fill
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 className="object-cover"
                                 priority
                             />
@@ -108,9 +109,10 @@ export default async function ProductPage({ params }) {
                             <h1 className="text-5xl md:text-6xl font-black uppercase tracking-tighter leading-none mb-8">
                                 {product.name.split(' ').slice(0, -1).join(' ')} <span className="text-slate-400 italic">{product.name.split(' ').pop()}</span>
                             </h1>
-                            <p className="text-xl text-slate-600 leading-relaxed font-medium italic">
-                                &quot;{product.longDescription}&quot;
-                            </p>
+                            <div
+                                className="text-xl text-slate-600 leading-relaxed font-medium italic"
+                                dangerouslySetInnerHTML={{ __html: `&quot;${product.longDescription}&quot;` }}
+                            />
                         </header>
 
                         {/* Technical Data Table */}

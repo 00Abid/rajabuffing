@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Star, Quote, ShieldCheck, CheckCircle2, Building2 } from "lucide-react";
 
 export const metadata = {
@@ -13,7 +14,7 @@ const testimonials = [
     {
         name: "Rajesh Kumar",
         business: "Kumar Restaurant Group",
-        testimonial: "Raja Buffing Works has been our primary B2B partner for 5+ years. Their ability to handle high-volume mirror finishing for our commercial kitchenware is unmatched in the Vasai industrial belt.",
+        testimonial: <span>Raja Buffing Works has been our primary B2B partner for 5+ years. Their ability to handle high-volume mirror finishing for our <Link href="/Products/commercial-utensils-polishing" className="text-blue-600 hover:underline">commercial kitchenware</Link> is unmatched in the Vasai industrial belt.</span>,
         rating: 5,
         date: "2025-11-01",
         type: "Commercial Partner"
@@ -21,7 +22,7 @@ const testimonials = [
     {
         name: "Priya Sharma",
         business: "Boutique Home Chef",
-        testimonial: "The Matte Specialist finish they provided for my custom cookware line is incredible. It gives the stainless steel a premium, scratch-resistant texture that my customers love.",
+        testimonial: <span>The <Link href="/Products/specialty-matte-finishing" className="text-blue-600 hover:underline">Matte Specialist finish</Link> they provided for my custom cookware line is incredible. It gives the stainless steel a premium, scratch-resistant texture that my customers love.</span>,
         rating: 5,
         date: "2025-10-15",
         type: "Retail Client"
@@ -29,7 +30,7 @@ const testimonials = [
     {
         name: "Vikram Patel",
         business: "Patel Industrial Caterers",
-        testimonial: "Reliability is key in logistics. Raja Buffing's 24-48 hour turnaround for bulk batches allows us to keep our operations running without downtime. Exceptional service.",
+        testimonial: <span>Reliability is key in logistics. <Link href="/Products" className="text-blue-600 hover:underline">Raja Buffing's 24 - 48 hour</Link> turnaround for bulk batches allows us to keep our operations running without downtime. Exceptional service.</span>,
         rating: 5,
         date: "2025-09-20",
         type: "Industrial Partner"
@@ -37,7 +38,7 @@ const testimonials = [
     {
         name: "Anita Desai",
         business: "Desai Kitchenware Exports",
-        testimonial: "We rely on them for export-grade finishing. Their compliance with technical standards and HSN protocols makes them a highly trustworthy job-work unit.",
+        testimonial: <span>We rely on them for export-grade finishing. Their compliance with technical standards and HSN protocols makes them a highly trustworthy <Link href="/Products" className="text-blue-600 hover:underline">job-work unit.</Link></span>,
         rating: 5,
         date: "2025-08-10",
         type: "Export Partner"
@@ -84,19 +85,6 @@ export default function Testimonials() {
             <div className="max-w-7xl mx-auto px-6">
 
                 {/* Section Header: E-E-A-T Focus */}
-                {/* <header className="max-w-4xl mb-20">
-                    <div className="inline-flex items-center gap-2 px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-[10px] font-bold uppercase tracking-widest mb-6 border border-slate-200">
-                        <ShieldCheck size={14} /> Verified Industry Reputation
-                    </div>
-                    <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none mb-8">
-                        Client <span className="text-slate-400 italic">Trust</span>
-                    </h1>
-                    <p className="text-xl text-slate-600 font-medium leading-relaxed">
-                        In the industrial sector, our reputation is forged in steel. From local caterers
-                        to global exporters, discover why the industry leaders of Maharashtra choose
-                        Raja Buffing Works for high-precision finishing.
-                    </p>
-                </header> */}
                 <header className="mb-20 max-w-3xl border-l-8 border-slate-900 pl-8">
                     <div className="flex items-center gap-2 text-slate-500 font-bold text-xs uppercase tracking-[0.2em] mb-4">
                         <ShieldCheck size={14} /> Verified Industry Reputation
@@ -176,9 +164,9 @@ export default function Testimonials() {
                         Join the industrial leaders of Maharashtra. We offer specialized bulk rates
                         for manufacturers, retailers, and commercial kitchen suppliers.
                     </p>
-                    <button className="bg-slate-900 text-white px-12 py-5 rounded-2xl font-black uppercase tracking-tighter hover:bg-black transition-all shadow-xl">
+                    <Link href="/Contact" className="bg-slate-900 text-white px-12 py-5 rounded-2xl font-black uppercase tracking-tighter hover:bg-black transition-all shadow-xl inline-block">
                         Inquire for Job-Work Partnerships
-                    </button>
+                    </Link>
                 </section>
             </div>
         </main>
