@@ -13,18 +13,26 @@ export default function Footer() {
 
                     {/* Brand Section: E-E-A-T Signal */}
                     <div className="space-y-6">
-                        <div className="flex items-center space-x-3">
-                            <Image
-                                src="/logo.webp"
-                                alt="RAJA BUFFING WORKS - Professional Utensil Buffing Vasai"
-                                width={50}
-                                height={50}
-                                className="object-contain grayscale hover:grayscale-0 transition-all"
-                            />
-                            <h3 className="text-xl font-black tracking-tighter text-slate-900 leading-none">
-                                RAJA BUFFING WORKS<br /> <span className="text-slate-600 text-xs"> MATTE SPECIALIST</span>
-                            </h3>
-                        </div>
+                        <Link
+                            href="/"
+                            className="flex items-center space-x-3 group"
+                            aria-label="Raja Buffing Works - Home"
+                        >
+                            <div className="flex items-center space-x-3">
+                                <Image
+                                    src="/logo.webp"
+                                    alt="RAJA BUFFING WORKS - Professional Utensil Buffing Vasai"
+                                    width={50}
+                                    height={50}
+                                    className="object-contain grayscale hover:grayscale-0 transition-all"
+                                />
+                                <h3 className="text-xl font-black tracking-tighter text-slate-900 leading-none">
+                                    RAJA BUFFING WORKS<br /> <span className="text-slate-600 text-xs"> MATTE SPECIALIST</span>
+                                </h3>
+
+                            </div>
+                        </Link>
+
                         <p className="text-sm font-medium leading-relaxed text-slate-500">
                             The designated Matte Specialist of Vasai. Providing export-grade
                             finishing for commercial kitchenware and industrial utensils across Maharashtra since 1994.
@@ -96,6 +104,6 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer >
     );
 }
