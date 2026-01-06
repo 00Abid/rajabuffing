@@ -3,7 +3,24 @@ const nextConfig = {
   /* config options here */
   // reactCompiler: true, // Disabled - can cause reload issues in dev
 
-  // Image optimization configuration
+  // 1. Domain Redirects (The SEO Fix for GSC/Bing)
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'rajabuffing.vercel.app',
+          },
+        ],
+        destination: 'https://rajabuffing.shop/:path*',
+        permanent: true, // This is the 301 Permanent signal Google needs
+      },
+    ];
+  },
+
+  // 2. Image optimization configuration
   images: {
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
@@ -14,13 +31,9 @@ const nextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
-  // Enable compression
+  // 3. Performance & Security
   compress: true,
-
-  // Power by header removal for security
   poweredByHeader: false,
-
-  // Strict mode for better error handling
   reactStrictMode: true,
 };
 
