@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Breadcrumbs from "./components/Breadcrum";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,10 +30,6 @@ export const metadata = {
 
   alternates: {
     canonical: '/',
-  },
-  verification: {
-    msvalidate: "B406A713428734B7264507731D5DC69A",
-    google: "EkGqUbfh-N6cCARPau3htFfsTC4zILcqZWkn-WhgOHA"
   },
 
 
@@ -116,7 +113,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth" data-scroll-behavior="smooth">
       <head>
-
+        <meta name="msvalidate.01" content="B406A713428734B7264507731D5DC69A" />
+        <meta name="google-site-verification" content="EkGqUbfh-N6cCARPau3htFfsTC4zILcqZWkn-WhgOHA" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white`}>
         {/* Dynamic Schema Injection */}
@@ -124,6 +122,8 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(mainSchema) }}
         />
+
+
 
         <Navbar />
 
@@ -135,6 +135,15 @@ export default function RootLayout({ children }) {
         </div>
 
         <Footer />
+        <Script id="clarity-script" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+                c[a] = c[a] || function(){(c[a].q = c[a].q || []).push(arguments)};
+                t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+                y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+            })(window, document, "clarity", "script", "ux8qfx1i7j");
+          `}
+        </Script>
       </body>
     </html>
   );
