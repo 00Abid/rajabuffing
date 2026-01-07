@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-// Changed 'Tool' to 'Wrench' to fix the Build Error
 import { ArrowLeft, Home, Wrench, Package, PhoneCall } from "lucide-react";
 
 export const metadata = {

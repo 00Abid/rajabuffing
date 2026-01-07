@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "rajabuffing.vercel.app"
+        }
+      ],
+      "destination": "https://rajabuffing.shop/$1",
+      "permanent": true
+    }
+  ]
+}

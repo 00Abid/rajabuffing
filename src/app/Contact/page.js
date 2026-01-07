@@ -160,7 +160,7 @@ export default function Contact() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Contact Raja Buffing on WhatsApp"
-                                className="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center border border-slate-100 shadow-sm hover:bg-slate-900 hover:text-white transition-all shadow-sm"
+                                className="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center border border-slate-100 shadow-sm hover:bg-slate-900 hover:text-white transition-all"
                             >
                                 <MessageSquare size={20} className="text-black hover:text-white" />
                             </a>

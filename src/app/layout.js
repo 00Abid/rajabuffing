@@ -29,7 +29,7 @@ export const metadata = {
 
 
   alternates: {
-    canonical: '/',
+    canonical: 'https://rajabuffing.shop',
   },
 
 
