@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
-  // reactCompiler: true, // Disabled - can cause reload issues in dev
-
-  // 1. Domain Redirects (The SEO Fix for GSC/Bing)
+  // 1. Domain Redirects (Optimized for GSC Migration)
   async redirects() {
     return [
       {
@@ -14,13 +11,17 @@ const nextConfig = {
             value: 'rajabuffing.vercel.app',
           },
         ],
+        // Use the exact destination URL as seen in GSC (check if it needs www. or not)
         destination: 'https://rajabuffing.shop/:path*',
-        permanent: true, // This is the 301 Permanent signal Google needs
+
+        // REMOVE: permanent: true
+        // ADD: statusCode: 301
+        statusCode: 301,
       },
     ];
   },
 
-  // 2. Image optimization configuration
+  // 2. Image optimization (No changes needed here)
   images: {
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
@@ -31,7 +32,6 @@ const nextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
-  // 3. Performance & Security
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
