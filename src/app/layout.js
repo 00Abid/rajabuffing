@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 // TOP 0.1% METADATA ENGINE
 export const metadata = {
-  metadataBase: new URL('https://rajabuffing.shop'),
+  metadataBase: new URL('https://www.rajabuffing.shop'),
   title: {
     default: "RAJA BUFFING WORKS | #1 Industrial Utensil Polishing in Vasai East",
     template: "%s | Raja Buffing Works"
@@ -29,14 +29,14 @@ export const metadata = {
 
 
   alternates: {
-    canonical: 'https://rajabuffing.shop',
+    canonical: 'https://www.rajabuffing.shop',
   },
 
 
   openGraph: {
     title: "RAJA BUFFING WORKS - Premium Industrial Polishing",
     description: "Bringing the shine back with precision buffing for bulk utensils. Specialized in Matte & Mirror finishes.",
-    url: "https://rajabuffing.shop",
+    url: "https://www.rajabuffing.shop",
     siteName: "Raja Buffing Works",
     type: "website",
     locale: "en_IN", // Target Indian Market

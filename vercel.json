@@ -8,7 +8,7 @@
           "value": "rajabuffing.vercel.app"
         }
       ],
-      "destination": "https://rajabuffing.shop/$1",
+      "destination": "https://www.rajabuffing.shop/$1",
       "permanent": true
     }
   ]

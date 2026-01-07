@@ -12,8 +12,7 @@ const nextConfig = {
           },
         ],
         // Use the exact destination URL as seen in GSC (check if it needs www. or not)
-        destination: 'https://rajabuffing.shop/:path*',
-
+        destination: 'https://www.rajabuffing.shop/:path*',
         // REMOVE: permanent: true
         // ADD: statusCode: 301
         statusCode: 301,
