@@ -164,11 +164,12 @@ export default function Products() {
                             ensure mirror-finish compliance.
                         </p>
                     </div>
-                    <Link href="/Contact" className="bg-white text-slate-900 px-10 py-5 rounded-2xl font-black uppercase tracking-tighter hover:bg-slate-200 transition-all flex items-center gap-3 shrink-0">
+                    <Link href="/Contact" className="bg-white text-slate-900 px-10 py-5 rounded-2xl font-black uppercase tracking-tighter hover:bg-slate-200 transition-all flex items-center gap-3 shrink-0"
+                        id="product-cta-bulk-pricing">
                         Request Bulk Pricing <Star size={20} className="fill-slate-900" />
                     </Link>
                 </footer>
             </div>
-        </main>
+        </main >
     );
 }
