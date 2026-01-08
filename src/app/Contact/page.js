@@ -78,11 +78,7 @@ export default function Contact() {
                 <div className="grid lg:grid-cols-2 gap-16 items-start">
 
                     {/* Left Side: Conversion Form */}
-                    <section className="bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 shadow-sm">
-                        <div className="mb-10">
-                            <h2 className="text-2xl font-bold mb-2">Service Request Form</h2>
-                            <p className="text-slate-500 text-sm font-medium">Expected response time: Under 4 hours (B2B Priority)</p>
-                        </div>
+                    <section className=" shadow-sm">
                         <Form />
                     </section>
 
