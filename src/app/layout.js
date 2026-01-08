@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Breadcrumbs from "./components/Breadcrum";
 import Script from "next/script";
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -115,6 +116,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="msvalidate.01" content="B406A713428734B7264507731D5DC69A" />
         <meta name="google-site-verification" content="EkGqUbfh-N6cCARPau3htFfsTC4zILcqZWkn-WhgOHA" />
+        <GoogleTagManager gtmId="GTM-PW39NWK5" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white`}>
         {/* Dynamic Schema Injection */}
