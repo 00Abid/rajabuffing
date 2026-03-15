@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
     if (!post) return {};
 
     return {
-        title: `${post.title} | Raja Buffing Works Vasai East`,
+        title: `${post.title}`,
         description: post.meta,
         keywords: post.keywords || '',
         alternates: {
@@ -61,27 +61,32 @@ const relatedServicesMap = {
     "ss-304-vs-316-buffing-guide": [
         { name: "Sauce Pot Buffing", href: "/products/sauce-pot-buffing", desc: "SS 304/316 mirror finishing for commercial sauce pots." },
         { name: "Milk Pot Polishing", href: "/products/milk-pot-polishing", desc: "Dairy-grade SS buffing to Ra < 0.4μm." },
+        { name: "Wok & Frying Pan", href: "/products/wok-pan-finishing", desc: "High-heat dual-finish buffing for commercial kadhais." },
         { name: "Commercial Utensils", href: "/products/commercial-utensils-polishing", desc: "Mixed SS grade bulk job-work with HSN 7323 invoicing." },
     ],
     "hsn-code-7323-job-work-compliance": [
         { name: "Commercial Utensils", href: "/products/commercial-utensils-polishing", desc: "Bulk job-work with full HSN 7323 GST documentation." },
         { name: "Sauce Pot Buffing", href: "/products/sauce-pot-buffing", desc: "SS 304/316 finishing -- HSN 7323 invoicing included." },
+        { name: "Milk Pot Polishing", href: "/products/milk-pot-polishing", desc: "Dairy-grade buffing for manufacturers under HSN 7323." },
         { name: "Matte Specialist", href: "/products/specialty-matte-finishing", desc: "Export-grade matte finishing under HSN 7323." },
     ],
     "matte-specialist-finishing-process": [
         { name: "Matte Specialist Finishing", href: "/products/specialty-matte-finishing", desc: "Ra 0.5μm-0.8μm on SS 304, SS 316, Aluminium." },
         { name: "Wok & Frying Pan Finishing", href: "/products/wok-pan-finishing", desc: "Exterior matte specialist finish for commercial kadhais." },
+        { name: "Sauce Pot Matte", href: "/products/sauce-pot-buffing", desc: "Matte-finish options for specialist sauce pot batches." },
         { name: "View Machinery", href: "/machinery", desc: "8-unit dedicated matte precision array." },
     ],
     "commercial-kitchen-maintenance": [
+        { name: "Milk Pot Polishing", href: "/products/milk-pot-polishing", desc: "Dairy-grade buffing with maintenance protocol guidance." },
+        { name: "Wok & Frying Pan", href: "/products/wok-pan-finishing", desc: "Cleaning protocols for high-heat matte finishes." },
         { name: "Silverware Restoration", href: "/products/silverware-restoration", desc: "Low-heat soft-cloth protocol for hotel silverware." },
         { name: "Commercial Utensils", href: "/products/commercial-utensils-polishing", desc: "Re-polishing batches for hotelware and catering equipment." },
-        { name: "Milk Pot Polishing", href: "/products/milk-pot-polishing", desc: "Dairy-grade buffing with maintenance protocol guidance." },
     ],
     "how-to-structure-job-work-challan-gst": [
         { name: "Commercial Utensils", href: "/products/commercial-utensils-polishing", desc: "Bulk job-work with full HSN 7323 GST documentation." },
         { name: "Sauce Pot Buffing", href: "/products/sauce-pot-buffing", desc: "Send SS 304/316 batches under GST challan rules." },
-        { name: "Matte Specialist", href: "/products/specialty-matte-finishing", desc: "Export-grade matte finishing -- HSN 7323 compliant." },
+        { name: "Wok Pan Finishing", href: "/products/wok-pan-finishing", desc: "Internal/External dual-finish batches under HSN 7323." },
+        { name: "Contact Unit", href: "/contact", desc: "Consult on GST invoice & job-work formalities." },
     ],
 };
 

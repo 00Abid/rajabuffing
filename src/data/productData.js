@@ -15,7 +15,7 @@ export const productData = {
         slug: "sauce-pot-buffing",
         name: "Industrial Sauce Pot Buffing",
         h1: "Industrial Sauce Pot Buffing & Mirror Polishing in Vasai East",
-        meta: "Specialist sauce pot buffing for commercial kitchens and manufacturers in Vasai East. Food-grade SS 304/316 mirror finishing to Ra < 0.2μm. Thermal blueing removal, 24-48 hour batch dispatch. HSN 7323 job-work invoicing. Serving Maharashtra since 1994.",
+        meta: "Specialist sauce pot buffing in Vasai East. Food-grade SS 304/316 mirror finishing to Ra < 0.2μm. HSN 7323 job-work. Serving Maharashtra since 1994.",
         keywords: "sauce pot buffing Vasai, SS 304 sauce pot polishing, commercial sauce pot mirror finish, industrial buffing Maharashtra, HSN 7323 utensil job work, sauce pot thermal blueing removal, stainless steel sauce pot finishing Vasai East",
         image: "/saucepot.webp",
 
@@ -165,7 +165,7 @@ export const productData = {
         slug: "milk-pot-polishing",
         name: "Milk Pot Polishing",
         h1: "Milk Pot (Pateela) Polishing & Dairy-Grade Buffing in Vasai East",
-        meta: "Precision milk pot and pateela polishing for dairy equipment manufacturers in Maharashtra. Edge-to-edge buffing, micro-scratch elimination, mirror finish interiors to Ra < 0.4μm for dairy-grade compliance. HSN 7323 job-work. 24-48 hour dispatch from Vasai East.",
+        meta: "Milk pot polishing for dairy manufacturers in Maharashtra. Mirror finish interiors to Ra < 0.4μm for dairy-grade compliance. HSN 7323 job-work Vasai.",
         keywords: "milk pot polishing Vasai, pateela buffing Maharashtra, dairy grade utensil finishing, mirror finish milk pots, SS 304 pateela polishing, SS 202 buffing job work Vasai, milk pot manufacturer buffing Maharashtra",
         image: "/milkpot.webp",
 
@@ -317,7 +317,7 @@ export const productData = {
         slug: "wok-pan-finishing",
         name: "Wok & Frying Pan Finishing",
         h1: "Wok & Deep Frying Pan Buffing | External Matte Specialist Finish Vasai East",
-        meta: "Heavy-duty buffing for SS 202/304 woks, kadhais, and deep frying pans. Dual-finish protocol: high-RPM interior smoothing plus external matte specialist finish for commercial kitchen durability. HSN 7323 job-work. Vasai East, Maharashtra.",
+        meta: "Buffing for SS woks and frying pans. Dual-finish: interior smoothing + external matte specialist finish. HSN 7323 job-work in Vasai East, Maharashtra.",
         keywords: "wok buffing Vasai, kadhai polishing Maharashtra, deep frying pan matte finish, SS 202 buffing job work, commercial wok finishing Vasai East, kadhai buffing job work Maharashtra, SS 304 frying pan polishing, wok handle weld buffing Vasai",
         image: "/kadhai.webp",
 
@@ -469,7 +469,7 @@ export const productData = {
         slug: "silverware-restoration",
         name: "Silverware Restoration",
         h1: "Silverware Restoration & Antique Polishing | Low-Heat Buffing Vasai East",
-        meta: "Expert restoration of antique and premium silverware in Vasai East. Low-heat soft-cloth buffing removes silver sulphide oxidation without metal loss. Solid silver, silver-plated, and brass supported. Bulk catering silverware accepted. HSN 7323 job-work, Maharashtra.",
+        meta: "Expert silverware restoration in Vasai East. Low-heat soft-cloth buffing removes tarnish without metal loss. HSN 7323 job-work for bulk catering sets.",
         keywords: "silverware restoration Vasai, antique silver polishing Maharashtra, silver sulphide oxidation removal, soft cloth silverware buffing, silver plated utensil restoration, bulk catering silverware polishing Vasai, brass utensil restoration Maharashtra, beading lathe silverware Vasai East",
         image: "/silverware.webp",
 
@@ -623,7 +623,7 @@ export const productData = {
         slug: "commercial-utensils-polishing",
         name: "Commercial Utensil Polishing",
         h1: "Bulk Commercial Utensil Polishing | HSN 7323 Job-Work Vasai East",
-        meta: "High-volume commercial utensil polishing for hotelware, catering equipment, and kitchenware manufacturers across Maharashtra. 20-motor buffing array, all SS grades, HSN 7323 compliant invoicing, 24-48 hour dispatch. Vasai East.",
+        meta: "High-volume utensil polishing for hotelware and catering equipment. HSN 7323 compliant invoicing, 24-48h dispatch for bulk manufacturer batches in Vasai.",
         keywords: "commercial utensil polishing Vasai, bulk hotelware buffing Maharashtra, HSN 7323 job work utensils, catering equipment polishing, bulk kitchenware buffing Vasai East, hotelware buffing job work Maharashtra, SS 202 304 316 bulk polishing, kitchenware manufacturer buffing Vasai",
         image: "/commercial.webp",
 
@@ -779,7 +779,7 @@ export const productData = {
         slug: "specialty-matte-finishing",
         name: "Matte Specialist Finishing",
         h1: "Matte Specialist Finishing | Ra Value-Targeted Satin Texture Vasai East",
-        meta: "Designated Matte Specialist of Vasai. Ra 0.5μm-0.8μm precision satin finishing for export-grade cookware using an 8-unit dedicated matte array. Fingerprint-resistant, unidirectional grain on SS 304, SS 316, and Aluminium. HSN 7323 job-work. Vasai East, Maharashtra.",
+        meta: "Precision Ra 0.5μm-0.8μm satin finishing for export-grade cookware. Fingerprint-resistant grain on SS 304/316 using a dedicated 8-unit matte array.",
         keywords: "matte finish specialist Vasai, satin finish stainless steel Maharashtra, Ra value matte polishing, fingerprint resistant cookware finish, export grade matte utensils Vasai East, brushed finish SS 304 Maharashtra, matte cookware finishing job work, designer cookware satin finish Vasai",
         image: "/special.webp",
 

@@ -7,13 +7,13 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Raja Buffing Works | #1 Matte Finish & Utensil Polishing in Vasai East",
-  description: "Industrial matte finishing and mirror polishing for SS 304, SS 316, and brass utensils. Serving cookware manufacturers, exporters, and commercial kitchenware units across Vasai East, Boisar, Palghar, and Maharashtra since 1994.",
+  title: "Matte Finish & Utensil Polishing",
+  description: "Industrial matte finishing and mirror polishing for SS 304, 316, and brass utensils. Serving cookware exporters in Maharashtra since 1994.",
   keywords: "utensil buffing Vasai, matte finish specialists Maharashtra, stainless steel buffing Vasai East, mirror finish utensils, industrial polishing Maharashtra, SS 304 buffing, SS 316 polishing, HSN 7323 job work, commercial kitchen utensil polishing, sauce pot buffing Vasai",
   alternates: { canonical: 'https://www.rajabuffing.shop' },
   openGraph: {
     type: 'website',
-    title: 'Raja Buffing Works: Matte Finish Specialists Vasai East',
+    title: 'Raja Buffing Works: Industrial Polishing',
     description: 'Industrial matte finishing and mirror polishing for SS utensils. 30+ years serving cookware manufacturers across Maharashtra.',
     publishedTime: '2026-01-01T04:30:00.000Z',
     authors: ['Raja Buffing Works'],
@@ -30,8 +30,14 @@ export default function Home() {
     "url": "https://www.rajabuffing.shop",
     "telephone": "+919096769473",
     "email": "rajabuffingworks02@gmail.com",
+    "image": "https://www.rajabuffing.shop/og.webp",
+    "logo": "https://www.rajabuffing.shop/logo.webp",
+    "priceRange": "Contact for bulk pricing",
     "areaServed": ["Vasai", "Vasai East", "Palghar", "Boisar", "Mumbai", "Thane", "Maharashtra", "Pune"],
-    "founder": "Raja Buffing Works Founders",
+    "founder": {
+      "@type": "Person",
+      "name": "Raja Buffing Works Founders"
+    },
     "foundingDate": "1994",
     "address": {
       "@type": "PostalAddress",

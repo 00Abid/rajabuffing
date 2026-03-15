@@ -2,8 +2,8 @@ import Link from "next/link";
 import { Cpu, ShieldCheck, Zap, ArrowRight, Factory, Settings } from "lucide-react";
 
 export const metadata = {
-    title: "Industrial Buffing Machinery | Raja Buffing Works Vasai East",
-    description: "20+ industrial buffing motors, matte precision polishers, hydraulic press, beading lathe, and fiber laser engraver. Tier-1 machinery fleet for bulk utensil job-work in Vasai East, Maharashtra.",
+    title: "Industrial Machinery Fleet",
+    description: "Tier-1 machinery fleet including 20+ buffing motors, matte precision polishers, and fiber laser engravers for bulk utensil job-work in Vasai.",
     keywords: "industrial buffing machinery Vasai, buffing motors Maharashtra, matte finish polishing machine, hydraulic press utensils, beading lathe machine, fiber laser engraver utensils, SS polishing machinery Vasai East",
     alternates: {
         canonical: 'https://www.rajabuffing.shop/machinery',
@@ -159,16 +159,21 @@ export default function Machinery() {
                 "@type": "Product",
                 "name": m.schemaName,
                 "description": m.schemaDesc,
+                "image": `https://www.rajabuffing.shop${m.poster}`,
+                "brand": {
+                    "@type": "Brand",
+                    "name": "Raja Buffing Works"
+                },
                 "manufacturer": {
-                    "@type": "LocalBusiness",
-                    "name": "Raja Buffing Works",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "addressLocality": "Vasai East",
-                        "addressRegion": "Maharashtra",
-                        "postalCode": "401208",
-                        "addressCountry": "IN"
-                    }
+                    "@id": "https://www.rajabuffing.shop/#localbusiness"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "url": "https://www.rajabuffing.shop/machinery",
+                    "priceCurrency": "INR",
+                    "price": "1",
+                    "availability": "https://schema.org/InStock",
+                    "priceValidUntil": "2027-12-31"
                 }
             }
         }))

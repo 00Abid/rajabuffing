@@ -2,8 +2,8 @@ import Link from "next/link";
 import { Star, Quote, ShieldCheck, CheckCircle2, Building2, ArrowRight, ArrowUpRight, Zap } from "lucide-react";
 
 export const metadata = {
-    title: "Client Trust & B2B Success Stories | Raja Buffing Works Vasai East",
-    description: "Verified reviews from industrial partners, hotelware manufacturers, and export clients across Maharashtra. 4.8/5 aggregate rating. 150+ B2B partners. Raja Buffing Works, Vasai East.",
+    title: "Client Success Stories",
+    description: "Verified reviews from hotelware manufacturers and export clients across Maharashtra. 4.8/5 rating with 150+ B2B partners in Vasai East.",
     keywords: "Raja Buffing Works reviews, industrial polishing testimonials, matte finish feedback, utensil restoration reviews, B2B buffing success stories Maharashtra, commercial utensil polishing client reviews Vasai",
     alternates: {
         canonical: 'https://www.rajabuffing.shop/testimonials',

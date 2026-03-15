@@ -3,8 +3,8 @@ import { blogPosts } from './../../data/blogPosts';
 import { Calendar, Clock, ArrowRight, ArrowUpRight, ShieldCheck, Tag, Zap, Factory, Settings } from "lucide-react";
 
 export const metadata = {
-    title: "Technical Insights | Industrial Buffing & Metal Finishing Blog | Raja Buffing Works",
-    description: "Technical knowledge base covering SS 304/316 buffing requirements, HSN 7323 job-work compliance, Ra value matte finishing science, and B2B care protocols for commercial kitchenware. Produced from 30+ years of active buffing operations at Vasai East, Maharashtra.",
+    title: "Technical Finishing Blog",
+    description: "Technical guides on SS 304/316 buffing, HSN 7323 compliance, and matte finishing science. Industrial expertise from 30+ years of operations.",
     keywords: "SS 304 polishing guide, buffing HSN code 7323, utensil maintenance tips, industrial buffing Vasai, mirror finish techniques, Ra value matte finish, stainless steel buffing Maharashtra, commercial kitchenware care",
     alternates: {
         canonical: 'https://www.rajabuffing.shop/blog',
@@ -207,10 +207,22 @@ export default function Blog() {
                     <div className="grid md:grid-cols-3 gap-6">
                         {[
                             {
+                                title: "Milk Pot Polishing",
+                                desc: "Dairy-grade Ra < 0.4μm buffing for pateelas. Specialized interior mirror finishing for hygiene compliance.",
+                                href: "/products/milk-pot-polishing",
+                                tag: "Dairy Grade"
+                            },
+                            {
+                                title: "Wok & Kadhai Finishing",
+                                desc: "Dual-finish protocol: High-RPM interior smoothing with external matte specialist satin texturing.",
+                                href: "/products/wok-pan-finishing",
+                                tag: "High Heat"
+                            },
+                            {
                                 title: "SS Grade Buffing Services",
                                 desc: "Sauce pots, milk pots, woks -- each grade processed with its own compound and RPM protocol.",
                                 href: "/products",
-                                tag: "All Six Services"
+                                tag: "All Services"
                             },
                             {
                                 title: "Matte Specialist Finishing",
@@ -225,23 +237,11 @@ export default function Blog() {
                                 tag: "High Volume"
                             },
                             {
-                                title: "Industrial Machinery Fleet",
-                                desc: "20+ buffing motors, 8-unit matte array, beading lathe, fiber laser. Grade-calibrated per batch.",
-                                href: "/machinery",
-                                tag: "Equipment"
-                            },
-                            {
                                 title: "Silverware Restoration",
                                 desc: "Low-heat soft-cloth protocol. Solid silver, silver-plated, brass. Zero metal removal.",
                                 href: "/products/silverware-restoration",
                                 tag: "Restoration"
-                            },
-                            {
-                                title: "Get a Batch Quote",
-                                desc: "Send your grade, finish specification, and batch size. We respond with pricing and lead time.",
-                                href: "/contact",
-                                tag: "Contact"
-                            },
+                            }
                         ].map((card, i) => (
                             <Link
                                 key={i}

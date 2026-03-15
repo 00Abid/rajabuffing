@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
     if (!product) return {};
 
     return {
-        title: `${product.h1} | Raja Buffing Works Vasai East`,
+        title: `${product.name}`,
         description: product.meta,
         keywords: product.keywords || '',
         alternates: {
@@ -48,7 +48,7 @@ export default async function ProductPage({ params }) {
 
     const relatedServices = product.relatedServices
         ? allServices.filter(s => product.relatedServices.includes(s.slug))
-        : allServices.filter(s => s.slug !== slug).slice(0, 3);
+        : allServices.filter(s => s.slug !== slug).slice(0, 6);
 
     // ── SCHEMA ──────────────────────────────────────────────────────────────
 
@@ -360,6 +360,24 @@ export default async function ProductPage({ params }) {
                             </Link>
                         ))}
                     </div>
+
+                    {/* ── RELATED BLOG POST ───────────────────────────────────── */}
+                    {product.relatedBlogPost && (
+                        <div className="mt-12 p-8 bg-slate-900 rounded-3xl border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6 group hover:border-slate-700 transition-colors">
+                            <div className="flex-1">
+                                <p className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-2">Technical Insight</p>
+                                <h4 className="text-xl font-black text-white tracking-tight">
+                                    {product.relatedBlogPost.title}
+                                </h4>
+                            </div>
+                            <Link
+                                href={product.relatedBlogPost.href}
+                                className="bg-white text-slate-900 px-6 py-3 rounded-xl text-xs font-black uppercase tracking-widest hover:bg-slate-100 transition-all flex items-center gap-2 shrink-0 shadow-lg"
+                            >
+                                Read Guide <ArrowRight size={14} />
+                            </Link>
+                        </div>
+                    )}
                 </section>
 
                 {/* ── MACHINERY CROSS-LINK ─────────────────────────────────────── */}

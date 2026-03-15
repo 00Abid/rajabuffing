@@ -46,9 +46,19 @@ const nextConfig = {
 
     return [
       {
-        // Apply these headers to all routes in your application.
+        // Apply security headers to all routes
         source: '/(.*)',
         headers: securityHeaders,
+      },
+      {
+        // Add canonical link for the PDF file
+        source: '/catalogue.pdf',
+        headers: [
+          {
+            key: 'Link',
+            value: '<https://www.rajabuffing.shop/catalogue.pdf>; rel="canonical"',
+          },
+        ],
       },
     ];
   },

@@ -6,7 +6,7 @@ export const blogPosts = {
     readTime: "9 min read",
     category: "Technical",
     keywords: "SS 304 vs SS 316 buffing, mirror finish stainless steel, #8 mirror finish protocol, SS 316 molybdenum buffing, stainless steel polishing Vasai, industrial buffing Maharashtra, chromium oxide passivation",
-    meta: "Technical comparison of buffing SS 304 and SS 316 for industrial utensil manufacturers. Covers molybdenum work-hardening, the 5-stage mirror protocol, compound selection per grade, and passivation benefits. Raja Buffing Works, Vasai East.",
+    meta: "Technical comparison of buffing SS 304 and SS 316. Covers molybdenum work-hardening and the 5-stage mirror protocol. Raja Buffing Works, Vasai East.",
     content: `
       <h2>The Metallurgy Behind Surface Finish</h2>
       <p>The most common question we receive from utensil manufacturers in the Vasai East industrial corridor is this: why does a SS 316-grade piece feel and look different after buffing compared to the same piece in SS 304, even when both go through the same machine at the same RPM? The answer is not operator error. It is material science.</p>
@@ -61,7 +61,7 @@ export const blogPosts = {
     readTime: "7 min read",
     category: "Industrial",
     keywords: "HSN code 7323, GST job work utensils, input tax credit buffing services, delivery challan job work, utensil manufacturer GST Maharashtra, HSN 7323 stainless steel, job work compliance India, buffing job work ITC",
-    meta: "Complete guide to HSN Code 7323 for utensil buffing job-work. Covers GST structure, ITC eligibility, delivery challan requirements, and export documentation for Maharashtra manufacturers. Raja Buffing Works, Vasai East.",
+    meta: "Guide to HSN Code 7323 for utensil buffing job-work. Covers GST structure, ITC eligibility, and delivery challans for Maharashtra manufacturers.",
     content: `
       <h2>What HSN Code 7323 Covers and Why It Applies to Buffing Job-Work</h2>
       <p>HSN (Harmonised System of Nomenclature) Code 7323 classifies "Table, kitchen or other household articles and parts thereof, of iron or steel" under the GST framework. This covers stainless steel utensils, cookware, hotelware, catering equipment, and their components -- which is the exact category of goods that manufacturers send to Raja Buffing Works for finishing.</p>
@@ -148,7 +148,7 @@ export const blogPosts = {
     readTime: "8 min read",
     category: "Specialization",
     keywords: "Ra value matte finish, satin finish stainless steel, roughness average utensils, matte specialist Vasai, fingerprint resistant SS finish, matte vs mirror finish, export cookware satin texture, Ra 0.5 micron stainless steel",
-    meta: "Technical guide to Ra value targeting for matte and satin finishes on stainless steel utensils. Covers Ra 0.5μm vs 0.8μm, grain direction, diffused reflection science, durability comparison, and export specification compliance. Raja Buffing Works, Vasai East.",
+    meta: "Guide to Ra value targeting for matte and satin finishes on SS utensils. Covers Ra 0.5μm vs 0.8μm and export compliance. Raja Buffing Works, Vasai.",
     content: `
       <h2>What Ra Actually Measures -- and Why It Matters for Matte Finishing</h2>
       <p>Ra (Roughness Average) is the arithmetic mean of the absolute height deviations of a surface profile from its mean line, measured in micrometres (μm). In plain terms: it is a single number that describes how rough or smooth a surface is at the micro level. A surface with Ra 0.1μm has very shallow peaks and valleys -- smooth enough to be mirror-grade. A surface with Ra 1.6μm has deep, irregular peaks and valleys -- rough enough to feel abrasive to the touch.</p>
@@ -206,7 +206,7 @@ export const blogPosts = {
     readTime: "6 min read",
     category: "Maintenance",
     keywords: "commercial kitchen utensil maintenance, mirror finish care protocol, chloride damage stainless steel, re-buffing schedule commercial kitchenware, hotel silverware maintenance, SS 304 care protocol, catering equipment polishing Vasai",
-    meta: "Professional B2B care protocols for commercial kitchenware and catering equipment. Covers chloride damage prevention, correct cleaning methods, re-buffing schedules, and silverware tarnish management. Raja Buffing Works, Vasai East.",
+    meta: "Professional B2B care protocols for commercial kitchenware and catering equipment. Covers chloride prevention, cleaning methods, and re-buffing schedules in Vasai.",
     content: `
       <h2>Why Commercial Kitchens Destroy Mirror Finishes Faster Than Anything Else</h2>
       <p>A professionally buffed stainless steel utensil leaving our Vasai East facility has a surface at Ra < 0.2μm -- optically smooth, passivated, and corrosion-resistant. Six months later, the same piece in active commercial kitchen service can look visibly worn, dull at the rim, and showing early surface discolouration at the base. The buffing did not fail. The maintenance protocol did.</p>
@@ -265,7 +265,7 @@ export const blogPosts = {
     readTime: "8 min read",
     category: "Industrial",
     keywords: "job work challan GST utensils, GST job work rules stainless steel, HSN 7323 job work challan, buffing job work ITC eligibility, 180 day job work rule GST, utensil buffing GST compliance Maharashtra",
-    meta: "Step-by-step guide to structuring a GST-compliant job-work challan for utensil buffing under HSN 7323. Covers required fields, 180-day return rule, input tax credit eligibility, and return consignment documentation. Raja Buffing Works, Vasai East.",
+    meta: "Guide to structuring a GST-compliant job-work challan for utensil buffing under HSN 7323. Covers required fields and the 180-day return rule.",
     content: `
       <h2>Why the Challan Is the Document That Protects Your ITC</h2>
       <p>When a utensil manufacturer sends a batch of sauce pots or milk pots to a buffing unit for job-work, the transaction is not a sale. The manufacturer retains ownership of the goods throughout the process -- the buffing unit is performing a finishing service on goods-in-transit. Under the GST framework, this distinction matters enormously because it determines whether the manufacturer can claim input tax credit on the job-work service charge.</p>
