@@ -59,11 +59,11 @@ export default function RootLayout({ children }) {
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "@id": "https://rajabuffing.shop/#localbusiness",
+        "@id": "https://www.rajabuffing.shop/#localbusiness",
         "name": "Raja Buffing Works",
-        "url": "https://rajabuffing.shop",
-        "logo": "https://rajabuffing.shop/logo.webp",
-        "image": "https://rajabuffing.shop/og.webp",
+        "url": "https://www.rajabuffing.shop",
+        "logo": "https://www.rajabuffing.shop/logo.webp",
+        "image": "https://www.rajabuffing.shop/og.webp",
         "telephone": "+91-9096769473",
         "email": "rajabuffingworks02@gmail.com",
         "address": {

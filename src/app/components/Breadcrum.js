@@ -28,13 +28,13 @@ export default function Breadcrumbs() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://rajabuffing.shop"
+                "item": "https://www.rajabuffing.shop"
             },
             ...breadcrumbList.map((item, i) => ({
                 "@type": "ListItem",
                 "position": i + 2,
                 "name": item.label,
-                "item": `https://rajabuffing.shop${item.href}`
+                "item": `https://www.rajabuffing.shop${item.href}`
             }))
         ]
     };

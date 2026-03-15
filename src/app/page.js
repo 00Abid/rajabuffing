@@ -9,7 +9,7 @@ export const metadata = {
   title: "Raja Buffing Works | #1 Matte Finish & Utensil Polishing in Vasai East",
   description: "Experience-led industrial metal finishing. 30+ years as a Matte Specialist and Mirror Polishing authority for SS utensils in Vasai, Maharashtra.",
   keywords: "utensil buffing Vasai, matte finish specialists Maharashtra, stainless steel buffing Vasai East, mirror finish utensils, industrial polishing Maharashtra",
-  alternates: { canonical: 'https://rajabuffing.shop' },
+  alternates: { canonical: 'https://www.rajabuffing.shop' },
   openGraph: {
     type: 'website',
     title: 'Raja Buffing Works: The Matte Finishing Specialists of Vasai',
@@ -79,10 +79,10 @@ export default function Home() {
               Engineering premium mirror and satin textures for over 30 years.
             </p>
             <div className="flex flex-wrap gap-5">
-              <Link href="/Contact" aria-label="Get a bulk quote for buffing services" className="bg-slate-100 text-slate-900 px-10 py-5 font-black rounded-2xl hover:bg-white transition-all shadow-2xl flex items-center gap-2 uppercase tracking-tight">
+              <Link href="/contact" aria-label="Get a bulk quote for buffing services" className="bg-slate-100 text-slate-900 px-10 py-5 font-black rounded-2xl hover:bg-white transition-all shadow-2xl flex items-center gap-2 uppercase tracking-tight">
                 Get Bulk Quote <ArrowRight size={20} />
               </Link>
-              <Link href="/Products" aria-label="View our buffing capabilities" className="bg-transparent border-2 border-slate-500/50 text-slate-100 px-10 py-5 font-black rounded-2xl hover:bg-slate-100/10 transition-all uppercase tracking-tight">
+              <Link href="/products" aria-label="View our buffing capabilities" className="bg-transparent border-2 border-slate-500/50 text-slate-100 px-10 py-5 font-black rounded-2xl hover:bg-slate-100/10 transition-all uppercase tracking-tight">
                 Our Capabilities
               </Link>
             </div>
@@ -216,7 +216,7 @@ export default function Home() {
             <a href="/catalogue.pdf" download className="bg-slate-900 text-white px-14 py-6 rounded-2xl font-black flex items-center justify-center gap-3 hover:bg-slate-800 transition-all shadow-2xl uppercase tracking-tighter">
               <Download size={24} /> Get Technical Catalogue
             </a>
-            <Link href="/Contact" className="bg-white text-slate-900 border-2 border-slate-900 px-14 py-6 rounded-2xl font-black hover:bg-slate-50 transition-all uppercase tracking-tighter shadow-lg flex items-center justify-center">
+            <Link href="/contact" className="bg-white text-slate-900 border-2 border-slate-900 px-14 py-6 rounded-2xl font-black hover:bg-slate-50 transition-all uppercase tracking-tighter shadow-lg flex items-center justify-center">
               Visit Vasai Facility
             </Link>
           </div>

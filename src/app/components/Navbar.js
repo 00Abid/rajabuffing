@@ -18,11 +18,11 @@ export default function Navbar() {
 
     const links = [
         { href: "/", label: "Home" },
-        { href: "/Products", label: "Buffing Services" },
-        { href: "/Machinery", label: "Machinery" },
+        { href: "/products", label: "Buffing Services" },
+        { href: "/machinery", label: "Machinery" },
         { href: "/blog", label: "Technical Insights" },
         { href: "/testimonials", label: "Client Trust" },
-        { href: "/Contact", label: "Get a Quote" },
+        { href: "/contact", label: "Get a Quote" },
     ];
 
     return (

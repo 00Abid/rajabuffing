@@ -84,7 +84,7 @@ export default function Footer() {
                             <p className="flex items-center gap-3"><Mail size={16} className="text-slate-900" /> rajabuffingworks00@gmail.com</p>
                         </div>
                         <div className="pt-4">
-                            <Link href="/Contact" className="bg-slate-900 text-white px-6 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-black transition-all inline-block">
+                            <Link href="/contact" className="bg-slate-900 text-white px-6 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-black transition-all inline-block">
                                 Get Technical Quote
                             </Link>
                         </div>

@@ -5,6 +5,6 @@ export default function robots() {
             allow: '/',
             disallow: ['/private/', '/admin/', '/api/'],
         },
-        sitemap: 'https://rajabuffing.shop/sitemap.xml',
+        sitemap: 'https://www.rajabuffing.shop/sitemap.xml',
     }
 }

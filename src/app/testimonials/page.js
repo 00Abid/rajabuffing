@@ -6,7 +6,7 @@ export const metadata = {
     description: "Verified reviews from industrial partners and retailers across Maharashtra. Rated 4.8/5 for matte and mirror finishing expertise. See why 150+ clients trust us.",
     keywords: "Raja Buffing Works reviews, industrial polishing testimonials, matte finish feedback, utensil restoration reviews, B2B buffing success stories",
     alternates: {
-        canonical: 'https://rajabuffing.shop/testimonials',
+        canonical: 'https://www.rajabuffing.shop/testimonials',
     },
 };
 
@@ -14,7 +14,7 @@ const testimonials = [
     {
         name: "Rajesh Kumar",
         business: "Kumar Restaurant Group",
-        testimonial: <span>Raja Buffing Works has been our primary B2B partner for 5+ years. Their ability to handle high-volume mirror finishing for our <Link href="/Products/commercial-utensils-polishing" className="text-blue-600 hover:underline">commercial kitchenware</Link> is unmatched in the Vasai industrial belt.</span>,
+        testimonial: <span>Raja Buffing Works has been our primary B2B partner for 5+ years. Their ability to handle high-volume mirror finishing for our <Link href="/products/commercial-utensils-polishing" className="text-blue-600 hover:underline">commercial kitchenware</Link> is unmatched in the Vasai industrial belt.</span>,
         rating: 5,
         date: "2025-11-01",
         type: "Commercial Partner"
@@ -22,7 +22,7 @@ const testimonials = [
     {
         name: "Priya Sharma",
         business: "Boutique Home Chef",
-        testimonial: <span>The <Link href="/Products/specialty-matte-finishing" className="text-blue-600 hover:underline">Matte Specialist finish</Link> they provided for my custom cookware line is incredible. It gives the stainless steel a premium, scratch-resistant texture that my customers love.</span>,
+        testimonial: <span>The <Link href="/products/specialty-matte-finishing" className="text-blue-600 hover:underline">Matte Specialist finish</Link> they provided for my custom cookware line is incredible. It gives the stainless steel a premium, scratch-resistant texture that my customers love.</span>,
         rating: 5,
         date: "2025-10-15",
         type: "Retail Client"
@@ -30,7 +30,7 @@ const testimonials = [
     {
         name: "Vikram Patel",
         business: "Patel Industrial Caterers",
-        testimonial: <span>Reliability is key in logistics. <Link href="/Products" className="text-blue-600 hover:underline">Raja Buffing's 24 - 48 hour</Link> turnaround for bulk batches allows us to keep our operations running without downtime. Exceptional service.</span>,
+        testimonial: <span>Reliability is key in logistics. <Link href="/products" className="text-blue-600 hover:underline">Raja Buffing's 24 - 48 hour</Link> turnaround for bulk batches allows us to keep our operations running without downtime. Exceptional service.</span>,
         rating: 5,
         date: "2025-09-20",
         type: "Industrial Partner"
@@ -38,7 +38,7 @@ const testimonials = [
     {
         name: "Anita Desai",
         business: "Desai Kitchenware Exports",
-        testimonial: <span>We rely on them for export-grade finishing. Their compliance with technical standards and HSN protocols makes them a highly trustworthy <Link href="/Products" className="text-blue-600 hover:underline">job-work unit.</Link></span>,
+        testimonial: <span>We rely on them for export-grade finishing. Their compliance with technical standards and HSN protocols makes them a highly trustworthy <Link href="/products" className="text-blue-600 hover:underline">job-work unit.</Link></span>,
         rating: 5,
         date: "2025-08-10",
         type: "Export Partner"
@@ -164,7 +164,7 @@ export default function Testimonials() {
                         Join the industrial leaders of Maharashtra. We offer specialized bulk rates
                         for manufacturers, retailers, and commercial kitchen suppliers.
                     </p>
-                    <Link href="/Contact" className="bg-slate-900 text-white px-12 py-5 rounded-2xl font-black uppercase tracking-tighter hover:bg-black transition-all shadow-xl inline-block">
+                    <Link href="/contact" className="bg-slate-900 text-white px-12 py-5 rounded-2xl font-black uppercase tracking-tighter hover:bg-black transition-all shadow-xl inline-block">
                         Inquire for Job-Work Partnerships
                     </Link>
                 </section>

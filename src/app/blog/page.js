@@ -8,7 +8,7 @@ export const metadata = {
     description: "Expert guides on utensil maintenance, SS 304/316 buffing techniques, HSN codes for job work, and industrial polishing best practices from Raja Buffing Works.",
     keywords: "SS 304 polishing guide, buffing HSN code, utensil maintenance tips, industrial buffing Vasai, mirror finish techniques",
     alternates: {
-        canonical: 'https://rajabuffing.shop/blog',
+        canonical: 'https://www.rajabuffing.shop/blog',
     },
 };
 
@@ -32,7 +32,7 @@ export default function Blog() {
             "@type": "BlogPosting",
             "headline": post.title,
             "datePublished": post.date,
-            "url": `https://rajabuffing.shop/blog/${post.slug}`
+            "url": `https://www.rajabuffing.shop/blog/${post.slug}`
         }))
     };
 

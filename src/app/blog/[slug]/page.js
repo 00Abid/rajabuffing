@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
         title: `${post.title} | Technical Insights | RAJA BUFFING WORKS`,
         description: post.meta,
         alternates: {
-            canonical: `https://rajabuffing.shop/blog/${slug}`,
+            canonical: `https://www.rajabuffing.shop/blog/${slug}`,
         },
         openGraph: {
             title: post.title,
@@ -42,19 +42,19 @@ export default async function BlogPost({ params }) {
         "author": {
             "@type": "Organization",
             "name": "Raja Buffing Works",
-            "url": "https://rajabuffing.shop"
+            "url": "https://www.rajabuffing.shop"
         },
         "publisher": {
             "@type": "Organization",
             "name": "Raja Buffing Works",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://rajabuffing.shop/logo.webp"
+                "url": "https://www.rajabuffing.shop/logo.webp"
             }
         },
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": `https://rajabuffing.shop/blog/${slug}`
+            "@id": `https://www.rajabuffing.shop/blog/${slug}`
         }
     };
 
@@ -135,7 +135,7 @@ export default async function BlogPost({ params }) {
                                 <p className="text-slate-400 text-sm mt-1 font-medium">Serving the Maharashtra Industrial corridor since 1994.</p>
                             </div>
                             <Link
-                                href="/Contact"
+                                href="/contact"
                                 className="bg-white text-slate-900 px-10 py-4 rounded-xl font-black uppercase tracking-tighter hover:bg-slate-200 transition-all text-sm shadow-xl flex items-center gap-2"
                             >
                                 Request Industrial Quote <ArrowRight size={16} />

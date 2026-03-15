@@ -52,20 +52,20 @@ export default function NotFound() {
                         <Home size={18} /> Return Home
                     </Link>
                     <Link
-                        href="/Products"
+                        href="/products"
                         className="flex items-center justify-center gap-3 p-5 bg-white border-2 border-slate-100 text-slate-900 rounded-2xl font-black uppercase tracking-widest text-xs hover:bg-slate-50 transition-all shadow-md"
                     >
                         <Package size={18} /> Buffing Services
                     </Link>
                     <Link
-                        href="/Machinery"
+                        href="/machinery"
                         className="flex items-center justify-center gap-3 p-5 bg-white border-2 border-slate-100 text-slate-900 rounded-2xl font-black uppercase tracking-widest text-xs hover:bg-slate-50 transition-all shadow-md"
                     >
                         {/* Updated to Wrench */}
                         <Wrench size={18} /> Our Machinery
                     </Link>
                     <Link
-                        href="/Contact"
+                        href="/contact"
                         className="flex items-center justify-center gap-3 p-5 bg-slate-100 text-slate-600 rounded-2xl font-black uppercase tracking-widest text-xs hover:bg-slate-200 transition-all shadow-md"
                     >
                         <PhoneCall size={18} /> Get Support

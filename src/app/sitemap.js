@@ -2,16 +2,16 @@ import { blogPosts } from '../data/blogPosts';
 import { productData } from '../data/productData';
 
 export default function sitemap() {
-  const baseUrl = "https://rajabuffing.shop";
+  const baseUrl = "https://www.rajabuffing.shop";
 
   // 1. Static Core Pages
   const staticPages = [
     '',
-    '/Products',
-    '/Machinery',
+    '/products',
+    '/machinery',
     '/blog',
     '/testimonials',
-    '/Contact',
+    '/contact',
     '/privacy',
     '/terms',
   ].map((route) => ({
@@ -31,7 +31,7 @@ export default function sitemap() {
 
   // 3. Dynamic Product Pages (Money Pages)
   const productUrls = Object.keys(productData).map((slug) => ({
-    url: `${baseUrl}/Products/${slug}`,
+    url: `${baseUrl}/products/${slug}`,
     lastModified: new Date(),
     changeFrequency: 'daily', // Increased frequency for products
     priority: 0.9,

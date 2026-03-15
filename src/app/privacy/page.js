@@ -5,7 +5,7 @@ export const metadata = {
     title: "Privacy Policy | Raja Buffing Works - Industrial Data Protection",
     description: "Our commitment to protecting your industrial data and project specifications. Learn how Raja Buffing Works handles B2B information in Vasai, Maharashtra.",
     alternates: {
-        canonical: 'https://rajabuffing.shop/Privacy',
+        canonical: 'https://www.rajabuffing.shop/privacy',
     },
 };
 
@@ -80,7 +80,7 @@ export default function PrivacyPolicy() {
                             <Globe size={20} className="text-slate-400" /> 4. Cookies & Analytics
                         </h2>
                         <p className="text-slate-600 leading-relaxed">
-                            Our website (rajabuffing.shop) uses minimal cookies to enhance user experience and analyze site traffic via Google Analytics. This data is anonymized and used solely to improve our <strong><Link href="/blog" className="text-blue-600 hover:underline">technical insights</Link></strong> blog and <Link href="/Products" className="text-blue-600 hover:underline">product catalogs</Link>.
+                            Our website (rajabuffing.shop) uses minimal cookies to enhance user experience and analyze site traffic via Google Analytics. This data is anonymized and used solely to improve our <strong><Link href="/blog" className="text-blue-600 hover:underline">technical insights</Link></strong> blog and <Link href="/products" className="text-blue-600 hover:underline">product catalogs</Link>.
                         </p>
                     </section>
                 </div>
@@ -95,7 +95,7 @@ export default function PrivacyPolicy() {
                         <Link href="mailto:rajabuffingworks02@gmail.com" className="flex items-center gap-3 text-sm font-black uppercase tracking-widest text-white hover:text-slate-400 transition-colors">
                             <Mail size={18} /> rajabuffingworks02@gmail.com
                         </Link>
-                        <Link href="/Contact" className="flex items-center gap-3 text-sm font-black uppercase tracking-widest text-white hover:text-slate-400 transition-colors">
+                        <Link href="/contact" className="flex items-center gap-3 text-sm font-black uppercase tracking-widest text-white hover:text-slate-400 transition-colors">
                             <Globe size={18} /> Data Request Form
                         </Link>
                     </div>
