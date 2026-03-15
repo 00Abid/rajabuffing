@@ -22,53 +22,27 @@ export const metadata = {
 };
 
 export default function Home() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Raja Buffing Works",
-    "description": "Industrial matte finishing and mirror polishing specialist for SS 304, SS 316, and brass utensils. Serving cookware manufacturers across Maharashtra since 1994.",
-    "url": "https://www.rajabuffing.shop",
-    "telephone": "+919096769473",
-    "email": "rajabuffingworks02@gmail.com",
-    "image": "https://www.rajabuffing.shop/og.webp",
-    "logo": "https://www.rajabuffing.shop/logo.webp",
-    "priceRange": "Contact for bulk pricing",
-    "areaServed": ["Vasai", "Vasai East", "Palghar", "Boisar", "Mumbai", "Thane", "Maharashtra", "Pune"],
-    "founder": {
-      "@type": "Person",
-      "name": "Raja Buffing Works Founders"
-    },
-    "foundingDate": "1994",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Vasai East",
-      "addressRegion": "Maharashtra",
-      "postalCode": "401208",
-      "addressCountry": "IN"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Metal Finishing Services",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Matte Finishing Specialist", "description": "Fingerprint-resistant satin finish for export-grade cookware" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mirror Polishing SS 304/316", "description": "High-luster #8 mirror finish for stainless steel utensils" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sauce Pot Buffing", "description": "Food-grade SS 304 finishing for commercial sauce pots" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Utensil Job Work", "description": "Bulk HSN 7323 job work for hotelware and catering equipment" } }
-      ]
-    },
-    "sameAs": [],
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      "opens": "09:00",
-      "closes": "20:00"
-    }
-  };
 
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the HSN code for utensil buffing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The primary HSN code for utensil polishing and job work is 7323, specifically covering stainless steel kitchenware finishing. All job-work invoices are issued with full GST compliance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is the best matte finish specialist in Vasai?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Raja Buffing Works in Vasai East is the designated matte specialist for export-grade stainless steel utensils, using proprietary Ra-targeted buffing protocols."
+        }
+      },
       {
         "@type": "Question",
         "name": "What is the difference between buffing and polishing?",
@@ -79,26 +53,10 @@ export default function Home() {
       },
       {
         "@type": "Question",
-        "name": "Why are you known as the Matte Specialist in Vasai?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Raja Buffing Works developed a proprietary low-heat buffing cycle that creates a uniform, fingerprint-resistant satin finish specifically for premium stainless steel export cookware."
-        }
-      },
-      {
-        "@type": "Question",
         "name": "Which SS grades does Raja Buffing Works process?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "We process SS 202, SS 304, and SS 316 grades. SS 316 requires a separate buffing compound protocol due to its higher molybdenum content."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you handle HSN 7323 job-work billing for B2B manufacturers?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. All job-work invoices are issued under HSN Code 7323 with full GST compliance. B2B partners can claim input tax credit on our services."
         }
       },
       {
@@ -114,15 +72,22 @@ export default function Home() {
 
   return (
     <div className="pt-16 font-sans antialiased text-slate-900 bg-white">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* HERO SECTION */}
       <section className="relative h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
+          <Image
+            src="/home.webp"
+            alt="Industrial buffing process at Raja Buffing Works Vasai East"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover brightness-[0.35]"
+          />
           <video
             src="/home.mp4"
-            className="w-full h-full object-cover brightness-[0.35]"
+            className="w-full h-full object-cover brightness-[0.35] absolute inset-0"
             autoPlay
             muted
             loop
@@ -130,7 +95,7 @@ export default function Home() {
             title="Industrial buffing process showcase"
             poster="/home.webp"
           >
-            <Image src="/home.webp" alt="Industrial buffing process at Raja Buffing Works Vasai East" fill className="object-cover" />
+            <source src="/home.mp4" type="video/mp4" />
           </video>
         </div>
         <div className="relative max-w-7xl mx-auto px-6 w-full">

@@ -51,12 +51,26 @@ const nextConfig = {
         headers: securityHeaders,
       },
       {
-        // Add canonical link for the PDF file
+        // Add canonical link for the PDF file and handle caching of static assets
         source: '/catalogue.pdf',
         headers: [
           {
             key: 'Link',
             value: '<https://www.rajabuffing.shop/catalogue.pdf>; rel="canonical"',
+          },
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        // Aggressive caching for media assets in public folder
+        source: '/(.*).(webp|mp4|webp|png|jpg|pdf)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
           },
         ],
       },

@@ -82,33 +82,28 @@ export default function RootLayout({ children }) {
         "priceRange": "Contact for bulk pricing",
         "foundingDate": "1994",
         "openingHours": ["Mo-Fr 08:00-20:00", "Sa 09:00-16:00"],
+        "areaServed": ["Vasai", "Vasai East", "Palghar", "Boisar", "Mumbai", "Thane", "Maharashtra", "Pune"],
+        "founder": {
+          "@type": "Person",
+          "name": "Raja Buffing Works Founders"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Metal Finishing Services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Matte Finishing Specialist", "description": "Fingerprint-resistant satin finish for export-grade cookware" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mirror Polishing SS 304/316", "description": "High-luster #8 mirror finish for stainless steel utensils" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sauce Pot Buffing", "description": "Food-grade SS 304 finishing for commercial sauce pots" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Utensil Job Work", "description": "Bulk HSN 7323 job work for hotelware and catering equipment" } }
+          ]
+        },
         "sameAs": [
           "https://www.facebook.com/rajabuffingworks",
           "https://www.instagram.com/rajabuffingworks",
           "https://www.indiamart.com/raja-buffing-works/"
         ]
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is the HSN code for utensil buffing?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The primary HSN code for utensil polishing and job work is 7323, specifically covering stainless steel kitchenware finishing."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Where is the best matte finish specialist in Vasai?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Raja Buffing Works in Naikpada, Vasai East is the designated matte specialist for export-grade stainless steel utensils."
-            }
-          }
-        ]
-      }
+
     ]
   };
 
@@ -117,7 +112,10 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="msvalidate.01" content="B406A713428734B7264507731D5DC69A" />
         <meta name="google-site-verification" content="EkGqUbfh-N6cCARPau3htFfsTC4zILcqZWkn-WhgOHA" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.clarity.ms" />
         <GoogleTagManager gtmId="GTM-PW39NWK5" />
+        <link rel="preload" href="/home.webp" as="image" fetchpriority="high" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white`}>
         {/* Dynamic Schema Injection */}
@@ -138,7 +136,7 @@ export default function RootLayout({ children }) {
         </div>
 
         <Footer />
-        <Script id="clarity-script" strategy="afterInteractive">
+        <Script id="clarity-script" strategy="lazyOnload">
           {`
             (function(c,l,a,r,i,t,y){
                 c[a] = c[a] || function(){(c[a].q = c[a].q || []).push(arguments)};

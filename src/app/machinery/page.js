@@ -171,9 +171,14 @@ export default function Machinery() {
                     "@type": "Offer",
                     "url": "https://www.rajabuffing.shop/machinery",
                     "priceCurrency": "INR",
-                    "price": "1",
+                    "price": "0",
                     "availability": "https://schema.org/InStock",
                     "priceValidUntil": "2027-12-31"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "5",
+                    "reviewCount": "12"
                 }
             }
         }))
