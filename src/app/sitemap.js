@@ -17,11 +17,11 @@ export default function sitemap() {
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
-    changeFrequency: 'weekly',
+    changeFrequency: route === '' ? 'daily' : 'weekly',
     priority: route === '' ? 1 : 0.8,
   }));
 
-  // 2. Dynamic Blog Posts (High Priority Content)
+  // 2. Dynamic Blog Posts
   const blogUrls = Object.entries(blogPosts).map(([slug, post]) => ({
     url: `${baseUrl}/blog/${slug}`,
     lastModified: new Date(post.date),
@@ -29,11 +29,11 @@ export default function sitemap() {
     priority: 0.7,
   }));
 
-  // 3. Dynamic Product Pages (Money Pages)
+  // 3. Dynamic Product Pages
   const productUrls = Object.keys(productData).map((slug) => ({
     url: `${baseUrl}/products/${slug}`,
     lastModified: new Date(),
-    changeFrequency: 'daily', // Increased frequency for products
+    changeFrequency: 'weekly',
     priority: 0.9,
   }));
 

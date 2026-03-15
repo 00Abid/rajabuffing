@@ -2,7 +2,7 @@ import { FileText, Hammer, Clock, ShieldCheck, Truck, AlertTriangle } from "luci
 import Link from "next/link";
 
 export const metadata = {
-    title: "B2B Terms of Service | Raja Buffing Works - Industrial Job Work",
+    title: "B2B Terms of Service | Raja Buffing Works",
     description: "Standard terms and conditions for industrial buffing, polishing, and restoration services at Raja Buffing Works, Vasai East.",
     alternates: {
         canonical: 'https://www.rajabuffing.shop/terms',

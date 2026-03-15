@@ -2,7 +2,7 @@ import { ShieldCheck, FileText, Eye, Lock, Globe, Mail } from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {
-    title: "Privacy Policy | Raja Buffing Works - Industrial Data Protection",
+    title: "Privacy Policy | Raja Buffing Works",
     description: "Our commitment to protecting your industrial data and project specifications. Learn how Raja Buffing Works handles B2B information in Vasai, Maharashtra.",
     alternates: {
         canonical: 'https://www.rajabuffing.shop/privacy',

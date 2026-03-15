@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   metadataBase: new URL('https://www.rajabuffing.shop'),
   title: {
-    default: "RAJA BUFFING WORKS | #1 Industrial Utensil Polishing in Vasai East",
+    default: "RAJA BUFFING WORKS | Utensil Polishing Vasai",
     template: "%s | Raja Buffing Works"
   },
   description: "30+ years of industrial expertise in SS 304/316 mirror finishing, matte specialist textures, and commercial utensil restoration. Serving the Maharashtra industrial belt.",
@@ -64,7 +64,7 @@ export default function RootLayout({ children }) {
         "url": "https://www.rajabuffing.shop",
         "logo": "https://www.rajabuffing.shop/logo.webp",
         "image": "https://www.rajabuffing.shop/og.webp",
-        "telephone": "+91-9096769473",
+        "telephone": "+919096769473",
         "email": "rajabuffingworks02@gmail.com",
         "address": {
           "@type": "PostalAddress",
@@ -79,6 +79,7 @@ export default function RootLayout({ children }) {
           "latitude": 19.4164,
           "longitude": 72.8697
         },
+        "priceRange": "Contact for bulk pricing",
         "foundingDate": "1994",
         "openingHours": ["Mo-Fr 08:00-20:00", "Sa 09:00-16:00"],
         "sameAs": [
