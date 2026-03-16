@@ -2,8 +2,8 @@ import Link from "next/link";
 import { Cpu, ShieldCheck, Zap, ArrowRight, Factory, Settings } from "lucide-react";
 
 export const metadata = {
-    title: "Industrial Machinery Fleet",
-    description: "Tier-1 machinery fleet including 20+ buffing motors, matte precision polishers, and fiber laser engravers for bulk utensil job-work in Vasai.",
+    title: "Industrial Buffing Machinery Vasai East | Raja Buffing Works",
+    description: "20+ buffing motors, 8-unit matte array, beading lathe, hydraulic press, 50W fiber laser. Grade-calibrated for SS 202 to SS 316. Vasai East, Maharashtra.",
     keywords: "industrial buffing machinery Vasai, buffing motors Maharashtra, matte finish polishing machine, hydraulic press utensils, beading lathe machine, fiber laser engraver utensils, SS polishing machinery Vasai East",
     alternates: {
         canonical: 'https://www.rajabuffing.shop/machinery',

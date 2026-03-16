@@ -3,8 +3,8 @@ import { blogPosts } from './../../data/blogPosts';
 import { Calendar, Clock, ArrowRight, ArrowUpRight, ShieldCheck, Tag, Zap, Factory, Settings } from "lucide-react";
 
 export const metadata = {
-    title: "Technical Finishing Blog",
-    description: "Technical guides on SS 304/316 buffing, HSN 7323 compliance, and matte finishing science. Industrial expertise from 30+ years of operations.",
+    title: "Industrial Buffing Technical Insights | Raja Buffing Works",
+    description: "Technical guides on SS grade buffing, HSN 7323 compliance, Ra value matte finishing, and B2B care protocols. From 30+ years of operations in Vasai East.",
     keywords: "SS 304 polishing guide, buffing HSN code 7323, utensil maintenance tips, industrial buffing Vasai, mirror finish techniques, Ra value matte finish, stainless steel buffing Maharashtra, commercial kitchenware care",
     alternates: {
         canonical: 'https://www.rajabuffing.shop/blog',
@@ -78,14 +78,6 @@ export default function Blog() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
             <div className="max-w-7xl mx-auto px-6">
-
-                {/* ── BREADCRUMB ────────────────────────────────────────────── */}
-                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm font-bold text-slate-400 mb-12">
-                    <Link href="/" className="hover:text-slate-900 transition-colors">Home</Link>
-                    <span>/</span>
-                    <span className="text-slate-900">Technical Insights</span>
-                </nav>
-
                 {/* ── HEADER ────────────────────────────────────────────────── */}
                 <header className="mb-20 max-w-3xl border-l-8 border-slate-900 pl-8">
                     <div className="flex items-center gap-2 text-slate-500 font-bold text-xs uppercase tracking-[0.2em] mb-4">

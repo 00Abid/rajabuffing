@@ -3,8 +3,8 @@ import { CheckCircle2, ShieldCheck, Star, ArrowUpRight, ArrowRight } from "lucid
 import Link from "next/link";
 
 export const metadata = {
-    title: "Utensil Buffing Services",
-    description: "Specialized matte and mirror finishing for sauce pots, milk pots, woks, and silverware. Bulk job-work for manufacturers in Vasai, Maharashtra.",
+    title: "Industrial Utensil Buffing Services Vasai | Raja Buffing Works",
+    description: "Six SS grade finishing services: sauce pots, milk pots, woks, silverware, commercial kitchenware, and matte specialist finishing. HSN 7323. Vasai East.",
     keywords: "sauce pot buffing Vasai, milk pot polishing Maharashtra, wok pan buffing, silverware restoration Vasai, matte finish utensils Maharashtra, commercial utensil polishing, SS 304 buffing job work, HSN 7323 utensil finishing",
     alternates: {
         canonical: 'https://www.rajabuffing.shop/products',

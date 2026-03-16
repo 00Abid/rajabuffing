@@ -3,8 +3,8 @@ import { Phone, Mail, MapPin, Clock, MessageSquare, ShieldCheck, ArrowRight, Arr
 import Form from "../components/Form";
 
 export const metadata = {
-    title: "Get a Bulk Job-Work Quote",
-    description: "Get a bulk job-work quote for SS 304/316 buffing and matte finishing. HSN 7323 compliant invoicing with 24-48h dispatch in Vasai East.",
+    title: "Contact Raja Buffing Works | Bulk Job-Work Quote Vasai East",
+    description: "Get a bulk buffing quote in 120 minutes. SS 202/304/316, mirror and matte finishing, HSN 7323 invoicing. Vasai East. +91 9096769473",
     keywords: "contact Raja Buffing Works, buffing job work quote Vasai, metal polishing Maharashtra inquiry, Vasai East industrial buffing, bulk utensil polishing quote, HSN 7323 job work Vasai",
     alternates: {
         canonical: 'https://www.rajabuffing.shop/contact',

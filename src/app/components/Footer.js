@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {
     Phone, Mail, MapPin, Clock,
-    ShieldCheck, ArrowUpRight
+    ShieldCheck, ArrowUpRight, Globe
 } from "lucide-react";
 
 export default function Footer() {
@@ -56,6 +56,14 @@ export default function Footer() {
                             <span className="flex items-center gap-1.5 text-[10px] font-bold text-slate-500 uppercase tracking-widest border border-slate-200 bg-white px-3 py-1 rounded-full">
                                 <ShieldCheck size={11} className="text-slate-700" /> ISO 9001:2015
                             </span>
+                            <a 
+                                href="https://share.google/0szNBkWVnSoXVDbNz" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-1.5 text-[10px] font-bold text-blue-600 uppercase tracking-widest border border-blue-100 bg-blue-50 px-3 py-1 rounded-full hover:bg-blue-100 transition-colors"
+                            >
+                                <Globe size={11} /> Find us on Google
+                            </a>
                         </div>
                     </div>
 

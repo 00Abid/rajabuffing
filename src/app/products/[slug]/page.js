@@ -18,8 +18,8 @@ export async function generateMetadata({ params }) {
     if (!product) return {};
 
     return {
-        title: `${product.name}`,
-        description: product.meta,
+        title: product.seoTitle || `${product.name}`,
+        description: product.seoDescription || product.meta,
         keywords: product.keywords || '',
         alternates: {
             canonical: `https://www.rajabuffing.shop/products/${slug}`,

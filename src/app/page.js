@@ -3,12 +3,12 @@ import Link from "next/link";
 import {
   CheckCircle, Download, Award, MapPin, Factory,
   History, ShieldCheck, Zap, ArrowRight, Settings,
-  Wrench, TrendingUp, Users, Globe
+  Wrench, TrendingUp, Users, Globe, ArrowUpRight
 } from "lucide-react";
 
 export const metadata = {
-  title: "Matte Finish & Utensil Polishing",
-  description: "Industrial matte finishing and mirror polishing for SS 304, 316, and brass utensils. Serving cookware exporters in Maharashtra since 1994.",
+  title: "Utensil Buffing & Matte Finishing Vasai East | Raja Buffing Work",
+  description: "Industrial matte and mirror finishing for SS 304, SS 316, and brass utensils. HSN 7323 job-work. 24-48hr dispatch. Vasai East, Maharashtra since 1994.",
   keywords: "utensil buffing Vasai, matte finish specialists Maharashtra, stainless steel buffing Vasai East, mirror finish utensils, industrial polishing Maharashtra, SS 304 buffing, SS 316 polishing, HSN 7323 job work, commercial kitchen utensil polishing, sauce pot buffing Vasai",
   alternates: { canonical: 'https://www.rajabuffing.shop' },
   openGraph: {
@@ -70,9 +70,29 @@ export default function Home() {
     ]
   };
 
+  const videoJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Industrial Buffing and Matte Finishing Process - Raja Buffing Works",
+    "description": "Watch our industrial buffing and matte finishing process for stainless steel utensils. Serving cookware manufacturers since 1994 in Vasai East.",
+    "thumbnailUrl": [
+      "https://www.rajabuffing.shop/home.webp"
+    ],
+    "uploadDate": "2026-01-01T08:00:00+08:00",
+    "duration": "PT0M30S",
+    "contentUrl": "https://www.rajabuffing.shop/home.mp4",
+    "embedUrl": "https://www.rajabuffing.shop/",
+    "interactionStatistic": {
+      "@type": "InteractionCounter",
+      "interactionType": { "@type": "WatchAction" },
+      "userInteractionCount": 1250
+    }
+  };
+
   return (
     <div className="pt-16 font-sans antialiased text-slate-900 bg-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(videoJsonLd) }} />
 
       {/* HERO SECTION */}
       <section className="relative h-[90vh] flex items-center overflow-hidden">
@@ -100,8 +120,18 @@ export default function Home() {
         </div>
         <div className="relative max-w-7xl mx-auto px-6 w-full">
           <div className="max-w-4xl">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-slate-100/10 backdrop-blur-md border border-slate-100/20 text-slate-100 rounded-full text-xs font-bold uppercase tracking-[0.2em] mb-8">
-              <Zap size={14} className="text-slate-400" /> Maharashtra Industrial Hub
+            <div className="flex flex-wrap items-center gap-4 mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-slate-100/10 backdrop-blur-md border border-slate-100/20 text-slate-100 rounded-full text-xs font-bold uppercase tracking-[0.2em]">
+                <Zap size={14} className="text-slate-400" /> Maharashtra Industrial Hub
+              </div>
+              <a
+                href="https://share.google/0szNBkWVnSoXVDbNz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/90 backdrop-blur-md text-slate-900 rounded-full text-[10px] font-black uppercase tracking-tight hover:bg-white transition-all shadow-lg"
+              >
+                <Globe size={12} className="text-blue-600" /> Find us on Google
+              </a>
             </div>
             <h1 className="text-white text-5xl md:text-8xl font-black mb-8 leading-[1.05] tracking-tighter">
               The <span className="text-slate-400">Matte Specialist</span> <br /> in Vasai East.
@@ -379,12 +409,41 @@ export default function Home() {
                 <p className="text-sm font-bold uppercase tracking-[0.2em] text-slate-500 mb-2">Compliance</p>
                 <p className="font-black text-slate-900 text-lg mb-1">HSN 7323 Compliant Unit</p>
                 <p className="text-slate-500 text-sm font-medium">
-                  All bulk job-work is invoiced under HSN Code 7323.{" "}
+                   All bulk job-work is invoiced under HSN Code 7323.{" "}
                   <Link href="/blog/hsn-code-7323-job-work-compliance" className="text-slate-900 font-bold underline underline-offset-2 hover:text-slate-600 transition-colors">
                     Read our complete GST compliance guide
                   </Link>
-                  {" "}for B2B manufacturers.
+                   {" "}for B2B manufacturers.
                 </p>
+              </div>
+              
+              {/* Google Business Profile Widget */}
+              <div className="bg-white border-2 border-slate-100 p-4 rounded-[2rem] shadow-xl overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.54581451000!2d72.86751137521503!3d19.41643498185566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9da2257989d%3A0x89ee4bf4f8f9e6be!2sRaja%20Buffing%20Works!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                  width="100%"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="rounded-2xl"
+                  title="Raja Buffing Works Google Business Profile Location"
+                ></iframe>
+                <div className="pt-4 px-2 flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                    <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">Live on Google</span>
+                  </div>
+                  <a 
+                    href="https://g.page/r/Cb7m-Pj-S-6JEAE" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-[10px] font-black uppercase tracking-widest text-blue-600 flex items-center gap-1 hover:underline"
+                  >
+                    View Reviews <ArrowUpRight size={10} />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

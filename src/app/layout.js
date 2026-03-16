@@ -115,7 +115,7 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.clarity.ms" />
         <GoogleTagManager gtmId="GTM-PW39NWK5" />
-        <link rel="preload" href="/home.webp" as="image" fetchpriority="high" />
+        <link rel="preload" href="/home.webp" as="image" fetchPriority="high" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white`}>
         {/* Dynamic Schema Injection */}
