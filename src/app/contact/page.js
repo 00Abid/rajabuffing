@@ -7,7 +7,7 @@ export const metadata = {
     description: "Get a bulk buffing quote in 120 minutes. SS 202/304/316, mirror and matte finishing, HSN 7323 invoicing. Vasai East. +91 9096769473",
     keywords: "contact Raja Buffing Works, buffing job work quote Vasai, metal polishing Maharashtra inquiry, Vasai East industrial buffing, bulk utensil polishing quote, HSN 7323 job work Vasai",
     alternates: {
-        canonical: 'https://www.rajabuffing.shop/contact',
+        canonical: 'https://www.rajabuffing.shop/contact/',
     },
 };
 

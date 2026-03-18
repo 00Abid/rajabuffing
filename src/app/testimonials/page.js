@@ -6,7 +6,7 @@ export const metadata = {
     description: "Verified reviews from utensil manufacturers, exporters, and catering operations across Maharashtra. 4.8/5 rating. 150+ B2B partners. Raja Buffing Works.",
     keywords: "Raja Buffing Works reviews, industrial polishing testimonials, matte finish feedback, utensil restoration reviews, B2B buffing success stories Maharashtra, commercial utensil polishing client reviews Vasai",
     alternates: {
-        canonical: 'https://www.rajabuffing.shop/testimonials',
+        canonical: 'https://www.rajabuffing.shop/testimonials/',
     },
 };
 

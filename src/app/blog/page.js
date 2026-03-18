@@ -7,7 +7,7 @@ export const metadata = {
     description: "Technical guides on SS grade buffing, HSN 7323 compliance, Ra value matte finishing, and B2B care protocols. From 30+ years of operations in Vasai East.",
     keywords: "SS 304 polishing guide, buffing HSN code 7323, utensil maintenance tips, industrial buffing Vasai, mirror finish techniques, Ra value matte finish, stainless steel buffing Maharashtra, commercial kitchenware care",
     alternates: {
-        canonical: 'https://www.rajabuffing.shop/blog',
+        canonical: 'https://www.rajabuffing.shop/blog/',
     },
 };
 
@@ -105,6 +105,45 @@ export default function Blog() {
                         extend the service life of buffed utensil batches.
                     </p>
                 </header>
+                
+                {/* ── THE PURPOSE OF THIS KNOWLEDGE BASE ─────────────────────── */}
+                <section className="mb-20 grid md:grid-cols-2 gap-12 items-center bg-slate-900 rounded-[3rem] p-12 text-white overflow-hidden relative">
+                    <div className="relative z-10">
+                        <div className="flex items-center gap-2 text-slate-400 font-bold text-[10px] uppercase tracking-[0.3em] mb-6">
+                            <BookOpen size={16} /> Technical Context
+                        </div>
+                        <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter leading-tight mb-8">
+                            Why Technical <br /> <span className="text-slate-400 italic font-medium">Insights?</span>
+                        </h2>
+                        <div className="space-y-6 text-slate-400 font-medium leading-relaxed">
+                            <p>
+                                In industrial buffing, a "good finish" is not a matter of opinion—it is a result of 
+                                material science, calibrated RPMs, and correct compound selection. We built this 
+                                knowledge base because utensil manufacturers in the Maharashtra industrial belt 
+                                face recurring challenges with SS grade mismatches, HSN 7323 compliance, and 
+                                export-standard Ra value requirements.
+                            </p>
+                            <p>
+                                These articles distill 30+ years of operational floor experience into actionable 
+                                data for procurement teams, quality inspectors, and business owners. Whether 
+                                you are scaling a production line for export or managing a high-volume commercial 
+                                kitchen, these insights help you protect your surface quality and your tax compliance.
+                            </p>
+                        </div>
+                        <div className="mt-10 flex flex-wrap gap-4">
+                            <div className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-white border-b-2 border-slate-700 pb-2">
+                                <ShieldCheck size={14} className="text-slate-400" /> ISO 9001:2015 Verified
+                            </div>
+                            <div className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-white border-b-2 border-slate-700 pb-2">
+                                <Factory size={14} className="text-slate-400" /> Ground Floor Experience
+                            </div>
+                        </div>
+                    </div>
+                    <div className="relative h-full min-h-[300px] border-r border-slate-800 flex items-center justify-center opacity-40 group hover:opacity-100 transition-opacity">
+                        <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-transparent rounded-full blur-[100px]" />
+                        <Zap size={200} strokeWidth={0.5} className="text-white relative z-10" />
+                    </div>
+                </section>
 
                 {/* ── TOPIC CLUSTERS ────────────────────────────────────────── */}
                 <section className="mb-16">

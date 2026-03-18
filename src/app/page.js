@@ -10,13 +10,14 @@ export const metadata = {
   title: "Utensil Buffing & Matte Finishing Vasai East | Raja Buffing Work",
   description: "Industrial matte and mirror finishing for SS 304, SS 316, and brass utensils. HSN 7323 job-work. 24-48hr dispatch. Vasai East, Maharashtra since 1994.",
   keywords: "utensil buffing Vasai, matte finish specialists Maharashtra, stainless steel buffing Vasai East, mirror finish utensils, industrial polishing Maharashtra, SS 304 buffing, SS 316 polishing, HSN 7323 job work, commercial kitchen utensil polishing, sauce pot buffing Vasai",
-  alternates: { canonical: 'https://www.rajabuffing.shop' },
+  alternates: { canonical: 'https://www.rajabuffing.shop/' },
   openGraph: {
     type: 'website',
     title: 'Raja Buffing Works: Industrial Polishing',
     description: 'Industrial matte finishing and mirror polishing for SS utensils. 30+ years serving cookware manufacturers across Maharashtra.',
     publishedTime: '2026-01-01T04:30:00.000Z',
     authors: ['Raja Buffing Works'],
+    url: 'https://www.rajabuffing.shop',
     images: [{ url: '/og.webp' }],
   },
 };

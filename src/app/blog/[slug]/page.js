@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
         description: post.meta,
         keywords: post.keywords || '',
         alternates: {
-            canonical: `https://www.rajabuffing.shop/blog/${slug}`,
+            canonical: `https://www.rajabuffing.shop/blog/${slug}/`,
         },
         openGraph: {
             title: `${post.title} | Raja Buffing Works`,
@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
             type: 'article',
             publishedTime: post.date,
             authors: ['Raja Buffing Works'],
-            url: `https://www.rajabuffing.shop/blog/${slug}`,
+            url: `https://www.rajabuffing.shop/blog/${slug}/`,
         }
     };
 }

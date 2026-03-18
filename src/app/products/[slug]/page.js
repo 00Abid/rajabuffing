@@ -22,7 +22,7 @@ export async function generateMetadata({ params }) {
         description: product.seoDescription || product.meta,
         keywords: product.keywords || '',
         alternates: {
-            canonical: `https://www.rajabuffing.shop/products/${slug}`,
+            canonical: `https://www.rajabuffing.shop/products/${slug}/`,
         },
         openGraph: {
             title: `${product.h1} | Raja Buffing Works`,

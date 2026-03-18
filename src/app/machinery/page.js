@@ -6,7 +6,7 @@ export const metadata = {
     description: "20+ buffing motors, 8-unit matte array, beading lathe, hydraulic press, 50W fiber laser. Grade-calibrated for SS 202 to SS 316. Vasai East, Maharashtra.",
     keywords: "industrial buffing machinery Vasai, buffing motors Maharashtra, matte finish polishing machine, hydraulic press utensils, beading lathe machine, fiber laser engraver utensils, SS polishing machinery Vasai East",
     alternates: {
-        canonical: 'https://www.rajabuffing.shop/machinery',
+        canonical: 'https://www.rajabuffing.shop/machinery/',
     },
 };
 

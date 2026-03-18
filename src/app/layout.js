@@ -30,14 +30,14 @@ export const metadata = {
 
 
   alternates: {
-    canonical: 'https://www.rajabuffing.shop',
+    canonical: 'https://www.rajabuffing.shop/',
   },
 
 
   openGraph: {
     title: "RAJA BUFFING WORKS - Premium Industrial Polishing",
     description: "Bringing the shine back with precision buffing for bulk utensils. Specialized in Matte & Mirror finishes.",
-    url: "https://www.rajabuffing.shop",
+    url: "https://www.rajabuffing.shop/",
     siteName: "Raja Buffing Works",
     type: "website",
     locale: "en_IN", // Target Indian Market

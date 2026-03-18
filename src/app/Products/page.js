@@ -7,7 +7,7 @@ export const metadata = {
     description: "Six SS grade finishing services: sauce pots, milk pots, woks, silverware, commercial kitchenware, and matte specialist finishing. HSN 7323. Vasai East.",
     keywords: "sauce pot buffing Vasai, milk pot polishing Maharashtra, wok pan buffing, silverware restoration Vasai, matte finish utensils Maharashtra, commercial utensil polishing, SS 304 buffing job work, HSN 7323 utensil finishing",
     alternates: {
-        canonical: 'https://www.rajabuffing.shop/products',
+        canonical: 'https://www.rajabuffing.shop/products/',
     },
 };
 
@@ -113,8 +113,13 @@ export default function Products() {
                     </h1>
                     <p className="text-xl text-slate-600 font-medium leading-relaxed mb-6">
                         Raja Buffing Works provides specialized matte and mirror finishing for a wide range of metal utensils.
+                        Our facility is specifically calibrated to handle bulk job-work consignments, ensuring that every 
+                        piece—from a single custom sauce pot to a 10,000-unit batch—meets identical quality standards.
+                    </p>
+                    <p className="text-lg text-slate-500 font-medium leading-relaxed mb-8">
                         Each job-work category uses a grade-matched buffing compound and RPM protocol calibrated to the
-                        specific utensil type -- SS 202, SS 304, SS 316, brass, or aluminium.
+                        specific utensil type -- SS 202, SS 304, SS 316, brass, or aluminium. We understand that in 
+                        industrial manufacturing, surface finish consistency is as important as the metal's performance.
                     </p>
                     <p className="text-lg text-slate-500 font-medium leading-relaxed mb-8">
                         Our{" "}

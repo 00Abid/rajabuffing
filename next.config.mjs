@@ -1,21 +1,22 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // 1. Domain Redirects (Optimized for GSC Migration)
+  trailingSlash: true,
+
   async redirects() {
     return [
+      // Vercel preview domain -> production
       {
         source: '/:path*',
-        has: [
-          {
-            type: 'host',
-            value: 'rajabuffing.vercel.app',
-          },
-        ],
-        // Use the exact destination URL as seen in GSC (check if it needs www. or not)
+        has: [{ type: 'host', value: 'rajabuffing.vercel.app' }],
         destination: 'https://www.rajabuffing.shop/:path*',
-        // REMOVE: permanent: true
-        // ADD: statusCode: 301
-        statusCode: 301,
+        permanent: true,
+      },
+      // Non-www -> www
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'rajabuffing.shop' }],
+        destination: 'https://www.rajabuffing.shop/:path*',
+        permanent: true,
       },
     ];
   },
@@ -36,7 +37,16 @@ const nextConfig = {
       },
       {
         key: 'Content-Security-Policy',
-        value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://www.clarity.ms https://scripts.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://*.clarity.ms https://w.clarity.ms; frame-src 'self' https://www.google.com;",
+        value: [
+          "default-src 'self'",
+          "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://www.clarity.ms https://scripts.clarity.ms",
+          "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+          "font-src 'self' https://fonts.gstatic.com",
+          "img-src 'self' data: https:",
+          "connect-src 'self' https://www.google-analytics.com https://*.clarity.ms https://w.clarity.ms",
+          // Maps embed needs both google.com and maps.googleapis.com
+          "frame-src 'self' https://www.google.com https://maps.google.com https://maps.googleapis.com",
+        ].join('; '),
       },
       {
         key: 'Strict-Transport-Security',
@@ -46,12 +56,10 @@ const nextConfig = {
 
     return [
       {
-        // Apply security headers to all routes
         source: '/(.*)',
         headers: securityHeaders,
       },
       {
-        // Add canonical link for the PDF file and handle caching of static assets
         source: '/catalogue.pdf',
         headers: [
           {
@@ -65,8 +73,8 @@ const nextConfig = {
         ],
       },
       {
-        // Aggressive caching for media assets in public folder
-        source: '/(.*).(webp|mp4|webp|png|jpg|pdf)',
+        // webp was listed twice -- removed duplicate
+        source: '/(.*).(webp|mp4|png|jpg|pdf)',
         headers: [
           {
             key: 'Cache-Control',
@@ -77,7 +85,6 @@ const nextConfig = {
     ];
   },
 
-  // 2. Image optimization (No changes needed here)
   images: {
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
