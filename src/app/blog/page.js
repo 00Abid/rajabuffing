@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { blogPosts } from './../../data/blogPosts';
-import { Calendar, Clock, ArrowRight, ArrowUpRight, ShieldCheck, Tag, Zap, Factory, Settings } from "lucide-react";
+import { Calendar, Clock, ArrowRight, ArrowUpRight, ShieldCheck, Tag, Zap, Factory, Settings, BookOpen } from "lucide-react";
 
 export const metadata = {
     title: "Industrial Buffing Technical Insights | Raja Buffing Works",
