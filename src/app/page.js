@@ -96,7 +96,7 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(videoJsonLd) }} />
 
       {/* HERO SECTION */}
-      <section className="relative h-[90vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[85vh] md:h-[90vh] flex items-center overflow-hidden py-20 md:py-0">
         <div className="absolute inset-0">
           <Image
             src="/home.webp"
@@ -104,11 +104,11 @@ export default function Home() {
             fill
             priority
             sizes="100vw"
-            className="object-cover brightness-[0.35]"
+            className="object-cover brightness-[0.25] md:brightness-[0.35]"
           />
           <video
             src="/home.mp4"
-            className="w-full h-full object-cover brightness-[0.35] absolute inset-0"
+            className="w-full h-full object-cover brightness-[0.25] md:brightness-[0.35] absolute inset-0"
             autoPlay
             muted
             loop
@@ -121,32 +121,32 @@ export default function Home() {
         </div>
         <div className="relative max-w-7xl mx-auto px-6 w-full">
           <div className="max-w-4xl">
-            <div className="flex flex-wrap items-center gap-4 mb-8">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-slate-100/10 backdrop-blur-md border border-slate-100/20 text-slate-100 rounded-full text-xs font-bold uppercase tracking-[0.2em]">
+            <div className="flex flex-wrap items-center gap-3 md:gap-4 mb-6 md:mb-8">
+              <div className="inline-flex items-center gap-2 px-3 py-1 md:px-4 md:py-1.5 bg-slate-100/10 backdrop-blur-md border border-slate-100/20 text-slate-100 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-[0.2em]">
                 <Zap size={14} className="text-slate-400" /> Maharashtra Industrial Hub
               </div>
               <a
                 href="https://share.google/0szNBkWVnSoXVDbNz"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/90 backdrop-blur-md text-slate-900 rounded-full text-[10px] font-black uppercase tracking-tight hover:bg-white transition-all shadow-lg"
+                className="inline-flex items-center gap-2 px-3 py-1 md:px-4 md:py-1.5 bg-white/90 backdrop-blur-md text-slate-900 rounded-full text-[9px] md:text-[10px] font-black uppercase tracking-tight hover:bg-white transition-all shadow-lg"
               >
                 <Globe size={12} className="text-blue-600" /> Find us on Google
               </a>
             </div>
-            <h1 className="text-white text-5xl md:text-8xl font-black mb-8 leading-[1.05] tracking-tighter">
-              The <span className="text-slate-400">Matte Specialist</span> <br /> in Vasai East.
+            <h1 className="text-white text-4xl sm:text-5xl md:text-8xl font-black mb-6 md:mb-8 leading-[1.1] md:leading-[1.05] tracking-tighter">
+              The <span className="text-slate-400">Matte Specialist</span> <br className="hidden md:block" /> in Vasai East.
             </h1>
-            <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed max-w-3xl font-medium">
+            <p className="text-lg md:text-2xl text-slate-300 mb-8 md:mb-12 leading-relaxed max-w-3xl font-medium">
               Industrial matte finishing and mirror polishing for SS 304, SS 316, and brass utensils.
               Serving cookware manufacturers, exporters, and commercial kitchenware units across
-              Vasai East, Boisar, Palghar, and the Maharashtra industrial corridor since 1994.
+              the Maharashtra industrial corridor since 1994.
             </p>
-            <div className="flex flex-wrap gap-5">
-              <Link href="/contact" aria-label="Get a bulk quote for buffing services" className="bg-slate-100 text-slate-900 px-10 py-5 font-black rounded-2xl hover:bg-white transition-all shadow-2xl flex items-center gap-2 uppercase tracking-tight">
+            <div className="flex flex-col sm:flex-row gap-4 md:gap-5">
+              <Link href="/contact" aria-label="Get a bulk quote for buffing services" className="bg-slate-100 text-slate-900 px-8 md:px-10 py-4 md:py-5 font-black rounded-2xl hover:bg-white transition-all shadow-2xl flex items-center justify-center gap-2 uppercase tracking-tight text-sm md:text-base">
                 Get Bulk Quote <ArrowRight size={20} />
               </Link>
-              <Link href="/products" aria-label="View our buffing capabilities" className="bg-transparent border-2 border-slate-500/50 text-slate-100 px-10 py-5 font-black rounded-2xl hover:bg-slate-100/10 transition-all uppercase tracking-tight">
+              <Link href="/products" aria-label="View our buffing capabilities" className="bg-transparent border-2 border-slate-500/50 text-slate-100 px-8 md:px-10 py-4 md:py-5 font-black rounded-2xl hover:bg-slate-100/10 transition-all uppercase tracking-tight text-sm md:text-base flex items-center justify-center">
                 Our Capabilities
               </Link>
             </div>
