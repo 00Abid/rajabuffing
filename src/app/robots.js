@@ -8,7 +8,6 @@ export default function robots() {
           '/private/',
           '/admin/',
           '/api/',
-          '/_next/', // Prevent crawling of Next.js internal files
           '/cdn-cgi/', // Cloudflare-specific if applicable
         ],
       },
