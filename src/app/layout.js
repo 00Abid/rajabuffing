@@ -114,7 +114,6 @@ export default function RootLayout({ children }) {
         <meta name="msvalidate.01" content="B406A713428734B7264507731D5DC69A" />
         <meta name="google-site-verification" content="EkGqUbfh-N6cCARPau3htFfsTC4zILcqZWkn-WhgOHA" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://www.clarity.ms" />
         <GoogleTagManager gtmId="GTM-PW39NWK5" />
         <link rel="preload" href="/home.webp" as="image" fetchPriority="high" />
       </head>
@@ -137,15 +136,6 @@ export default function RootLayout({ children }) {
         </div>
 
         <Footer />
-        <Script id="clarity-script" strategy="lazyOnload">
-          {`
-            (function(c,l,a,r,i,t,y){
-                c[a] = c[a] || function(){(c[a].q = c[a].q || []).push(arguments)};
-                t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-                y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-            })(window, document, "clarity", "script", "ux8qfx1i7j");
-          `}
-        </Script>
       </body>
     </html>
   );

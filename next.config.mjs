@@ -39,11 +39,11 @@ const nextConfig = {
         key: 'Content-Security-Policy',
         value: [
           "default-src 'self'",
-          "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://www.clarity.ms https://scripts.clarity.ms",
+          "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com",
           "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
           "font-src 'self' https://fonts.gstatic.com",
           "img-src 'self' data: https:",
-          "connect-src 'self' https://www.google-analytics.com https://*.clarity.ms https://w.clarity.ms",
+          "connect-src 'self' https://www.google-analytics.com",
           // Maps embed needs both google.com and maps.googleapis.com
           "frame-src 'self' https://www.google.com https://maps.google.com https://maps.googleapis.com",
         ].join('; '),
