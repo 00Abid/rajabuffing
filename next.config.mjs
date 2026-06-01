@@ -74,7 +74,7 @@ const nextConfig = {
       },
       {
         // webp was listed twice -- removed duplicate
-        source: '/(.*).(webp|mp4|png|jpg|pdf)',
+        source: '/:path*(webp|mp4|png|jpg|pdf)',
         headers: [
           {
             key: 'Cache-Control',

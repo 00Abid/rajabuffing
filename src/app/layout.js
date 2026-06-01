@@ -27,8 +27,9 @@ export const metadata = {
   description: "30+ years of expertise in SS 304/316 mirror finishing, matte textures, and commercial restoration serving the Maharashtra industrial belt.",
   keywords: ["utensil buffing Vasai", "matte finish specialist", "SS 304 polishing Maharashtra", "industrial cookware restoration", "silverware buffing Vasai East"],
   authors: [{ name: "Raja Buffing Works" }],
-
-
+  icons: {
+    icon: '/favicon.ico',
+  },
   alternates: {
     canonical: 'https://www.rajabuffing.shop/',
   },

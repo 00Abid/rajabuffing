@@ -23,11 +23,11 @@ export default function Navbar() {
 
     const links = [
         { href: "/", label: "Home" },
-        { href: "/products", label: "Buffing Services" },
-        { href: "/machinery", label: "Machinery" },
-        { href: "/blog", label: "Technical Insights" },
-        { href: "/testimonials", label: "Client Trust" },
-        { href: "/contact", label: "Get a Quote" },
+        { href: "/products/", label: "Services" },
+        { href: "/machinery/", label: "Machinery" },
+        { href: "/blog/", label: "Blog" },
+        { href: "/testimonials/", label: "Testimonials" },
+        { href: "/contact/", label: "Contact" },
     ];
 
     // Active detection:
@@ -100,7 +100,7 @@ export default function Navbar() {
                                 className="flex items-center gap-2 bg-gradient-to-r from-slate-700 to-slate-900 text-white px-5 py-2.5 rounded-xl font-bold hover:from-slate-800 hover:to-black transition-all shadow-md shadow-slate-300/50"
                             >
                                 <PhoneCall size={16} />
-                                <span>Call Unit</span>
+                                <span>Call</span>
                             </a>
                         </div>
 

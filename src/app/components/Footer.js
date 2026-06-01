@@ -56,9 +56,9 @@ export default function Footer() {
                             <span className="flex items-center gap-1.5 text-[10px] font-bold text-slate-500 uppercase tracking-widest border border-slate-200 bg-white px-3 py-1 rounded-full">
                                 <ShieldCheck size={11} className="text-slate-700" /> ISO 9001:2015
                             </span>
-                            <a 
-                                href="https://share.google/0szNBkWVnSoXVDbNz" 
-                                target="_blank" 
+                            <a
+                                href="https://share.google/0szNBkWVnSoXVDbNz"
+                                target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center gap-1.5 text-[10px] font-bold text-blue-600 uppercase tracking-widest border border-blue-100 bg-blue-50 px-3 py-1 rounded-full hover:bg-blue-100 transition-colors"
                             >
@@ -74,12 +74,12 @@ export default function Footer() {
                         </h3>
                         <ul className="space-y-3">
                             {[
-                                { label: "Sauce Pot Buffing", href: "/products/sauce-pot-buffing" },
-                                { label: "Milk Pot Polishing", href: "/products/milk-pot-polishing" },
-                                { label: "Wok & Frying Pan Finishing", href: "/products/wok-pan-finishing" },
-                                { label: "Silverware Restoration", href: "/products/silverware-restoration" },
-                                { label: "Commercial Utensils", href: "/products/commercial-utensils-polishing" },
-                                { label: "Matte Specialist Finishing", href: "/products/specialty-matte-finishing" },
+                                { label: "Sauce Pot Buffing", href: "/products/sauce-pot-buffing/" },
+                                { label: "Milk Pot Polishing", href: "/products/milk-pot-polishing/" },
+                                { label: "Wok & Frying Pan Finishing", href: "/products/wok-pan-finishing/" },
+                                { label: "Silverware Restoration", href: "/products/silverware-restoration/" },
+                                { label: "Commercial Utensils", href: "/products/commercial-utensils-polishing/" },
+                                { label: "Matte Specialist Finishing", href: "/products/specialty-matte-finishing/" },
                             ].map((item) => (
                                 <li key={item.href}>
                                     <Link
@@ -102,10 +102,10 @@ export default function Footer() {
                         <ul className="space-y-3 mb-8">
                             {[
                                 { label: "Home", href: "/" },
-                                { label: "Buffing Services", href: "/products" },
-                                { label: "Machinery", href: "/machinery" },
-                                { label: "Client Trust", href: "/testimonials" },
-                                { label: "Get a Quote", href: "/contact" },
+                                { label: "Services", href: "/products/" },
+                                { label: "Machinery", href: "/machinery/" },
+                                { label: "Testimonials", href: "/testimonials/" },
+                                { label: "Contact", href: "/contact/" },
                             ].map((item) => (
                                 <li key={item.href}>
                                     <Link
@@ -124,10 +124,10 @@ export default function Footer() {
                         </h4>
                         <ul className="space-y-3">
                             {[
-                                { label: "SS 304 vs SS 316 Buffing", href: "/blog/ss-304-vs-316-buffing-guide" },
-                                { label: "HSN 7323 Compliance", href: "/blog/hsn-code-7323-job-work-compliance" },
-                                { label: "Matte Finish Ra Values", href: "/blog/matte-specialist-finishing-process" },
-                                { label: "Kitchen Care Protocols", href: "/blog/commercial-kitchen-maintenance" },
+                                { label: "SS 304 vs SS 316 Buffing", href: "/blog/ss-304-vs-316-buffing-guide/" },
+                                { label: "HSN 7323 Compliance", href: "/blog/hsn-code-7323-job-work-compliance/" },
+                                { label: "Matte Finish Ra Values", href: "/blog/matte-specialist-finishing-process/" },
+                                { label: "Kitchen Care Protocols", href: "/blog/commercial-kitchen-maintenance/" },
                             ].map((item) => (
                                 <li key={item.href}>
                                     <Link
@@ -199,7 +199,7 @@ export default function Footer() {
                         </div>
 
                         <Link
-                            href="/contact"
+                            href="/contact/"
                             className="bg-slate-900 text-white px-6 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-black transition-all inline-flex items-center gap-2"
                         >
                             Get Technical Quote <ArrowUpRight size={12} />
@@ -214,8 +214,8 @@ export default function Footer() {
                         &copy; {new Date().getFullYear()} Raja Buffing Works &middot; Vasai East, Maharashtra 401208
                     </p>
                     <div className="flex items-center gap-6 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
-                        <Link href="/privacy" className="hover:text-slate-900 transition-colors">Privacy Policy</Link>
-                        <Link href="/terms" className="hover:text-slate-900 transition-colors">B2B Terms</Link>
+                        <Link href="/privacy/" className="hover:text-slate-900 transition-colors">Privacy Policy</Link>
+                        <Link href="/terms/" className="hover:text-slate-900 transition-colors">B2B Terms</Link>
                         <a
                             href="https://www.indiamart.com/raja-buffing-works/"
                             target="_blank"
@@ -225,6 +225,13 @@ export default function Footer() {
                             IndiaMart <ArrowUpRight size={10} />
                         </a>
                     </div>
+                </div>
+
+                {/* GIANT BRAND WATERMARK (ANTIGRAVITY STYLE) */}
+                <div className="w-full text-center mt-12 select-none pointer-events-none overflow-hidden">
+                    <h2 className="text-6xl sm:text-8xl md:text-9xl lg:text-[11rem] font-black tracking-tighter text-slate-900 uppercase leading-none">
+                        RAJA BUFFING
+                    </h2>
                 </div>
 
             </div>

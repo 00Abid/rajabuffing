@@ -29,6 +29,12 @@ export async function generateMetadata({ params }) {
     };
 }
 
+export async function generateStaticParams() {
+    return Object.keys(blogPosts).map((slug) => ({
+        slug: slug,
+    }));
+}
+
 const relatedPostsMap = {
     "ss-304-vs-316-buffing-guide": [
         "matte-specialist-finishing-process",

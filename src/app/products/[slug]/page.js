@@ -32,6 +32,12 @@ export async function generateMetadata({ params }) {
     };
 }
 
+export async function generateStaticParams() {
+    return Object.keys(productData).map((slug) => ({
+        slug: slug,
+    }));
+}
+
 const allServices = [
     { slug: 'sauce-pot-buffing', name: 'Industrial Sauce Pots', grade: 'SS 304/316', image: '/saucepot.webp' },
     { slug: 'milk-pot-polishing', name: 'Milk Pots (Pateela)', grade: 'Dairy SS', image: '/milkpot.webp' },
